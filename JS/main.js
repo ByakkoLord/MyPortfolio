@@ -105,3 +105,18 @@ function alternate(){
         isAlternate = false
     })}}
 
+var ShowProject1 = document.querySelector('#project_img1')
+var ShowDesc = document.querySelector('#descrip_real')
+var ShowTitle = document.querySelector('#descrip_h3')
+
+ShowProject1.addEventListener('mouseenter', function(){
+    ShowTitle.style.display = 'none'
+    ShowDesc.style.display = 'block'
+    ShowDesc.textContent = 'Lorem Lorem oremLor mLo remLo remLorem LoremLorem Lorem Lorem Lorem LoremLor emLoremLorem'
+})
+
+ShowProject1.addEventListener('mouseleave', function(){
+    ShowTitle.style.display = 'block'
+    ShowDesc.style.display = 'none'
+    ShowDesc.textContent = ''
+})

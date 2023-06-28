@@ -50,6 +50,7 @@ header{
     display: flex;
     width: 100vw;
     height: 100px;
+    z-index: 99;
 }
 
 #initial_logo{
@@ -223,6 +224,7 @@ header{
 
 #p_itens{
     overflow: auto;
+    scroll-behavior: smooth;
     width: 350px;
     height: 350px;
     background-color: rgb(46, 44, 63);
@@ -230,6 +232,12 @@ header{
     border-bottom: 3px dashed #17e2e9;
     box-shadow: 0 0 10px;
 }
+
+#p_itens::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+}
+
 
 .pp_itens{
     margin-left: 20px;
@@ -280,6 +288,15 @@ header{
     background-image: url(/assets/projects_images/StopWatch.gif);  
     background-size: 100%;
     }
+
+#descrip_real{
+    display: none;
+    text-align: justify;
+    font-size: 1.3em;
+    margin: 50px;
+    color: white;
+    font-weight: 700;
+}
 
 footer{
     border-top: 2px dashed #17e2e9;
