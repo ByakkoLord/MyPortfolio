@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+body{
+    background: linear-gradient(120deg, #202024, #A8AABD,#9FB1BD, #AC9FBD);
+    background-repeat: no-repeat;
+    background-size: 900% 900%;
+    scroll-behavior: smooth;
+    height: 100vh;
+    animation: none;
+}
+
+@keyframes lighttheme{
+    0%{
+        background-size: 900% 900%;
+    }
+    100%{
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes darktheme{
+    0%{
+        background-size: 100% 100%;
+    }
+    100%{
+        background-size: 900% 900%;
+    }
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 100px;
+}
+
+#initial_logo{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+#initial_header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+#logo_icon{
+    margin-left: 50px;
+    color: #17e2e9;
+    font-size: 3em;
+    transition: all 0.6s;
+    
+}
+
+#logo_icon:hover{
+    cursor: pointer;
+    color: #da5838;
+    transform: scale(110%);
+}
+
+#initial_header a{
+    font-weight: 800;
+    margin-right: 40px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #17e2e9;
+    position: relative;
+    transition: all 0.1s;
+}
+
+.mec:hover{
+    border-bottom: 2px solid #17e2e9;
+}
+
+#apresentation{
+    width: 1200px;
+    margin: 15vh auto;
+}
+
+#apresentation h2{
+    margin-bottom: 15px;
+    color: #17e2e9;
+}
+
+#apresentation h1{
+    color: #e6e6e6;
+    font-size: 4.6em;
+}
+
+#apresentation h3{
+    color: #A8AABD;
+    font-size: 4em;
+}
+
+#apresentation p{
+    margin-top: 20px;
+    width: 350px;
+    color: #b4b4b4;
+    font-size: 1.2em;
+}
+
+#apresentation a{
+    text-decoration: none;
+    color: #17e2e9;
+}
+
+#alert_theme{
+    margin-left: 20px;
+    color: #17e2e9;
+    font-size: 2.3em;
+}
+
+#alert{
+    display: flex;
+    align-items: center;
+}
+
+#alert p {
+    color: #17e2e9;
+    font-weight: 700;
+    margin-left: 20px;
+}
