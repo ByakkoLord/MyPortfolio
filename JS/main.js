@@ -8,6 +8,13 @@ var namer = document.querySelector ('#name')
 var slogan = document.querySelector ('#slogan')
 var intro = document.querySelector ('#introduce')
 var intro_a = document.querySelector ('#intro_a')
+var block_icon1 = document.querySelector('#block_icon1')
+var block_icon2 = document.querySelector('#block_icon2')
+var block_icon3 = document.querySelector('#block_icon3')
+var block_icon4 = document.querySelector('#block_icon4')
+var block_icon5 = document.querySelector('#block_icon5')
+var block_icon6 = document.querySelector('#block_icon6')
+var capa_title = document.querySelector('#capa_title')
 var isAlternate = false
 
 function alternate(){
@@ -40,6 +47,15 @@ function alternate(){
         intro.style.color = 'black'
         intro_a.style.color = '#da5838'
 
+        block_icon1.style.color = '#da5838'
+        block_icon2.style.color = '#da5838'
+        block_icon3.style.color = '#da5838'
+        block_icon4.style.color = '#da5838'
+        block_icon5.style.color = '#da5838'
+        block_icon6.style.color = '#da5838'
+
+        capa_title.style.color = '#da5838'
+
         isAlternate = true
     }else{
         background.style.animation = 'darktheme backwards 1s ease-in-out'
@@ -65,6 +81,15 @@ function alternate(){
         slogan.style.color = '#A8AABD'
         intro.style.color = '#b4b4b4'
         intro_a.style.color = '#17e2e9'
+
+        block_icon2.style.color = '#17e2e9'
+        block_icon1.style.color = '#17e2e9'
+        block_icon3.style.color = '#17e2e9'
+        block_icon4.style.color = '#17e2e9'
+        block_icon5.style.color = '#17e2e9'
+        block_icon6.style.color = '#17e2e9'
+
+        capa_title.style.color = '#17e2e9'
 
         isAlternate = false
     })}}
