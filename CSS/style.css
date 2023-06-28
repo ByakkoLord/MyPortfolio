@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar {
-    background: transparent;
+    background: #202024;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -160,6 +160,7 @@ header{
 }
 
 #capa_title{
+    margin-left: 5%;
     font-size: 3em;
     color: #17e2e9;
     writing-mode: vertical-lr;
@@ -197,10 +198,95 @@ header{
     color: #17e2e9;
 }
 
+#projects {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
 
+#sec_itens{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-content: center;
+    height: 600px;
+    overflow: auto;
+}
+
+#sec_desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+}
+
+#p_itens{
+    overflow: auto;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(46, 44, 63);
+    border-radius: 35px 0 35px 0;
+    border-bottom: 3px dashed #17e2e9;
+    box-shadow: 0 0 10px;
+}
+
+.pp_itens{
+    margin-left: 20px;
+    margin-top: 35px;
+    box-shadow: 0 0 10px;
+    margin-bottom: 35px;
+    width: 300px;
+    height: 300px;
+    border-radius: 35px 0 35px 0;
+    background-color: #38383f;
+    transition: all 0.6s;
+}
+
+.pp_itens:hover{
+    box-shadow: 0 0 10px #17e2e9;
+    cursor: pointer;
+}
+
+#descrip_p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(46, 44, 63);
+    border-radius: 35px 0 35px 0;
+    border-bottom: 3px dashed #17e2e9;
+    box-shadow: 0 0 10px;
+    
+}
+
+#descrip_h3{
+    font-size: 3.1em;
+    color: #17e2e9;
+}
+
+#project_img2{
+    background-image: url(/assets/projects_images/DarkandLightTheme.gif);  
+    background-size: 100%;
+    }
+
+#project_img1{
+    background-image: url(/assets/projects_images/Digital_Clock.gif);  
+    background-size: 100%;
+    }
+
+#project_img3{
+    background-image: url(/assets/projects_images/StopWatch.gif);  
+    background-size: 100%;
+    }
 
 footer{
     border-top: 2px dashed #17e2e9;
     text-align: center;
     color: white;
+}
+
+.hi_reveal_1, .blocks, .titles {
+    visibility: hidden;
 }

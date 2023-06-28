@@ -1,3 +1,14 @@
+//Scroll Reveal
+
+window.sr = ScrollReveal({ reset: true})
+
+sr.reveal('.hi_reveal_1', { rotate: {x: 0, y: 70, z: 0}, duration: 1500})
+sr.reveal('.blocks', { rotate: {x: 0, y: 70, z: 0}, duration: 1500})
+sr.reveal('.titles', { rotate: {x: 0, y: 70, z: 0}, duration: 2000})
+
+//Scroll Reveal
+
+
 var background = document.querySelector('body')
 var dlbtn = document.querySelector('#logo_icon')
 var header = document.querySelectorAll('#initial_header a')
@@ -7,7 +18,7 @@ var hi = document.querySelector ('#hi')
 var namer = document.querySelector ('#name')
 var slogan = document.querySelector ('#slogan')
 var intro = document.querySelector ('#introduce')
-var intro_a = document.querySelector ('#intro_a')
+var intro_a = document.querySelector ('.intro_a')
 var block_icon1 = document.querySelector('#block_icon1')
 var block_icon2 = document.querySelector('#block_icon2')
 var block_icon3 = document.querySelector('#block_icon3')
@@ -93,3 +104,4 @@ function alternate(){
 
         isAlternate = false
     })}}
+
