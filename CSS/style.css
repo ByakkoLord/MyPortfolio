@@ -142,12 +142,33 @@ header{
     margin-left: 20px;
 }
 
-#capabilities{
-    height: 100vh;
+#capa{
+    display: flex;
     width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+#capabilities{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#capabilities h3{
+    font-size: 3em;
+    color: #17e2e9;
+    writing-mode: vertical-lr;
+    width: 50px;
+    height: 350px;
+    
 }
 
 .blocks{
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100px;
     height: 100px;
     box-shadow: 0 0 10px;
@@ -159,9 +180,22 @@ header{
 
 .blocks:hover{
     border-top: 1px dashed #17e2e9;
+    transform: scale(105%);
     box-shadow: 0 0 10px #17e2e9;
 }
 
-footer{text-align: center;
+.fa-brands{
+    font-size: 5em;
+    color: #17e2e9;
+}
+
+.fa-question{
+    font-size: 5em;
+    color: #17e2e9;
+}
+
+footer{
+    border-top: 2px dashed #17e2e9;
+    text-align: center;
     color: white;
 }
