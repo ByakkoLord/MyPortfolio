@@ -6,6 +6,7 @@ sr.reveal('.hi_reveal_1', { rotate: {x: 0, y: 70, z: 0}, duration: 1500})
 sr.reveal('.blocks', { rotate: {x: 0, y: 70, z: 0}, duration: 1500})
 sr.reveal('.titles', { rotate: {x: 0, y: 70, z: 0}, duration: 2000})
 sr.reveal('.anima', { rotate: {x: 0, y: 70, z: 0}, duration: 2500})
+sr.reveal('.contact_effect', { rotate: {x: 0, y: 70, z: 0}, duration: 1500})
 
 //Scroll Reveal
 
