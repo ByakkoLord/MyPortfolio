@@ -5,6 +5,7 @@ window.sr = ScrollReveal({ reset: true})
 sr.reveal('.hi_reveal_1', { rotate: {x: 0, y: 70, z: 0}, duration: 1500})
 sr.reveal('.blocks', { rotate: {x: 0, y: 70, z: 0}, duration: 1500})
 sr.reveal('.titles', { rotate: {x: 0, y: 70, z: 0}, duration: 2000})
+sr.reveal('.anima', { rotate: {x: 0, y: 70, z: 0}, duration: 2500})
 
 //Scroll Reveal
 
@@ -119,6 +120,7 @@ var ShowIconsDiv = document.querySelector('#project_icons')
 var ShowIcon1 = document.querySelector('#proj_icon1')
 var ShowIcon2 = document.querySelector('#proj_icon2')
 var ShowIcon3 = document.querySelector('#proj_icon3')
+var ShowBox = document.querySelector('#p_itens')
 
 //Project1
 
@@ -179,3 +181,21 @@ ShowProject4.addEventListener('mouseenter', function(){
 
 //Colocar um timer para após retirar o mouse do projects ele voltar ao estado inicial
 //Digitar cada letra do #apresentation h2, uma por uma 
+
+function typeText(elementId, text, delay) {
+    var element = document.getElementById(elementId);
+    var index = 0;
+  
+    function type() {
+      if (index < text.length) {
+        element.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, delay);
+      }
+    }
+  
+    type();
+  }
+  
+  typeText("hi", "Hi, my name is", 90);
+  
