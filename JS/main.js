@@ -106,17 +106,67 @@ function alternate(){
     })}}
 
 var ShowProject1 = document.querySelector('#project_img1')
+var ShowProject2 = document.querySelector('#project_img2')
+var ShowProject3 = document.querySelector('#project_img3')
+var ShowProject4 = document.querySelector('#project_img4')
 var ShowDesc = document.querySelector('#descrip_real')
 var ShowTitle = document.querySelector('#descrip_h3')
+var ShowCode1 = document.querySelector('#code_btn1')
+var ShowCode2 = document.querySelector('#code_btn2')
+var ShowCode3 = document.querySelector('#code_btn3')
+var ShowCode4 = document.querySelector('#code_btn4')
+
+//Project1
 
 ShowProject1.addEventListener('mouseenter', function(){
     ShowTitle.style.display = 'none'
     ShowDesc.style.display = 'block'
-    ShowDesc.textContent = 'Lorem Lorem oremLor mLo remLo remLorem LoremLorem Lorem Lorem Lorem LoremLor emLoremLorem'
+    ShowDesc.textContent = '1Lorem Lorem oremLor mLo remLo remLorem LoremLorem Lorem Lorem Lorem LoremLor emLoremLorem'
+    ShowCode1.style.display = 'flex'
+    ShowCode2.style.display = 'none'
+    ShowCode3.style.display = 'none'
 })
 
-ShowProject1.addEventListener('mouseleave', function(){
-    ShowTitle.style.display = 'block'
-    ShowDesc.style.display = 'none'
-    ShowDesc.textContent = ''
+//Project1
+
+//Project2
+
+ShowProject2.addEventListener('mouseenter', function(){
+    ShowTitle.style.display = 'none'
+    ShowDesc.style.display = 'block'
+    ShowDesc.textContent = '2Lorem Lorem oremLor mLo remLo remLorem LoremLorem Lorem Lorem Lorem LoremLor emLoremLorem'
+    ShowCode2.style.display = 'flex'
+    ShowCode1.style.display = 'none'
+    ShowCode3.style.display = 'none'
+    ShowCode4.style.display = 'none'
 })
+
+//Project2
+
+//Project3
+
+ShowProject3.addEventListener('mouseenter', function(){
+    ShowTitle.style.display = 'none'
+    ShowDesc.style.display = 'block'
+    ShowDesc.textContent = '3Lorem Lorem oremLor mLo remLo remLorem LoremLorem Lorem Lorem Lorem LoremLor emLoremLorem'
+    ShowCode3.style.display = 'flex'
+    ShowCode1.style.display = 'none'
+    ShowCode4.style.display = 'none'
+    ShowCode2.style.display = 'none'
+})
+
+//Project3
+
+//Project4
+
+ShowProject4.addEventListener('mouseenter', function(){
+    ShowTitle.style.display = 'none'
+    ShowDesc.style.display = 'block'
+    ShowDesc.textContent = '4Lorem Lorem oremLor mLo remLo remLorem LoremLorem Lorem Lorem Lorem LoremLor emLoremLorem'
+    ShowCode4.style.display = 'flex'
+    ShowCode1.style.display = 'none'
+    ShowCode2.style.display = 'none'
+    ShowCode3.style.display = 'none'
+})
+
+//Project4
