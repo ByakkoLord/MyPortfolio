@@ -54,7 +54,7 @@ function alternate(){
 
         hi.style.color = '#da5838'
         namer.style.color = 'black'
-        slogan.style.color = 'rgb(75, 75, 75)'
+        slogan.style.color = '#A6442B'
         intro.style.color = 'black'
         intro_a.style.color = '#da5838'
 
@@ -176,3 +176,6 @@ ShowProject4.addEventListener('mouseenter', function(){
 })
 
 //Project4
+
+//Colocar um timer para após retirar o mouse do projects ele voltar ao estado inicial
+//Digitar cada letra do #apresentation h2, uma por uma 

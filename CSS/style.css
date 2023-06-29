@@ -98,7 +98,8 @@ header{
 
 #apresentation{
     width: 1200px;
-    margin: 15vh auto;
+    height: 50vh;
+    margin: 15vw auto;
 }
 
 #apresentation h2{
@@ -148,9 +149,8 @@ header{
 
 #capabilities{
     display: flex;
+    background-color: rgba(0, 0, 0, 0.137);
     align-items: center;
-    margin-left: 10px;
-
 }
 
 #capa{
@@ -425,3 +425,42 @@ footer{
 .hi_reveal_1, .blocks, .titles {
     visibility: hidden;
 }
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+#about_content{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#journey{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#wiam{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#about_title{
+    font-size: 3em;
+    color: #17e2e9;
+}
+
+.sub_titles{
+    font-size: 2.5em;
+    color: #17e2e9;
+}
+
