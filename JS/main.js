@@ -115,16 +115,22 @@ var ShowCode1 = document.querySelector('#code_btn1')
 var ShowCode2 = document.querySelector('#code_btn2')
 var ShowCode3 = document.querySelector('#code_btn3')
 var ShowCode4 = document.querySelector('#code_btn4')
+var ShowIconsDiv = document.querySelector('#project_icons')
+var ShowIcon1 = document.querySelector('#proj_icon1')
+var ShowIcon2 = document.querySelector('#proj_icon2')
+var ShowIcon3 = document.querySelector('#proj_icon3')
 
 //Project1
 
 ShowProject1.addEventListener('mouseenter', function(){
     ShowTitle.style.display = 'none'
     ShowDesc.style.display = 'block'
-    ShowDesc.textContent = '1Lorem Lorem oremLor mLo remLo remLorem LoremLorem Lorem Lorem Lorem LoremLor emLoremLorem'
+    ShowDesc.textContent = 'This is a digital clock that works based on information provided by the PC.'
     ShowCode1.style.display = 'flex'
     ShowCode2.style.display = 'none'
     ShowCode3.style.display = 'none'
+
+    ShowIconsDiv.style.display = 'flex'
 })
 
 //Project1
@@ -134,7 +140,7 @@ ShowProject1.addEventListener('mouseenter', function(){
 ShowProject2.addEventListener('mouseenter', function(){
     ShowTitle.style.display = 'none'
     ShowDesc.style.display = 'block'
-    ShowDesc.textContent = '2Lorem Lorem oremLor mLo remLo remLorem LoremLorem Lorem Lorem Lorem LoremLor emLoremLorem'
+    ShowDesc.textContent = 'This is a login page with Dark Theme and Light Theme function, plus Digital Clock'
     ShowCode2.style.display = 'flex'
     ShowCode1.style.display = 'none'
     ShowCode3.style.display = 'none'
@@ -148,7 +154,7 @@ ShowProject2.addEventListener('mouseenter', function(){
 ShowProject3.addEventListener('mouseenter', function(){
     ShowTitle.style.display = 'none'
     ShowDesc.style.display = 'block'
-    ShowDesc.textContent = '3Lorem Lorem oremLor mLo remLo remLorem LoremLorem Lorem Lorem Lorem LoremLor emLoremLorem'
+    ShowDesc.textContent = 'This is a Digital Stopwatch with start, reset and pause functions.'
     ShowCode3.style.display = 'flex'
     ShowCode1.style.display = 'none'
     ShowCode4.style.display = 'none'
@@ -162,7 +168,7 @@ ShowProject3.addEventListener('mouseenter', function(){
 ShowProject4.addEventListener('mouseenter', function(){
     ShowTitle.style.display = 'none'
     ShowDesc.style.display = 'block'
-    ShowDesc.textContent = '4Lorem Lorem oremLor mLo remLo remLorem LoremLorem Lorem Lorem Lorem LoremLor emLoremLorem'
+    ShowDesc.textContent = 'This is a Web Market made in conjunction with other programmers, it explores product search functions, filters, cart, among others.'
     ShowCode4.style.display = 'flex'
     ShowCode1.style.display = 'none'
     ShowCode2.style.display = 'none'
