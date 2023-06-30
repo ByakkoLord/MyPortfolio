@@ -127,6 +127,19 @@ var ShowBox = document.querySelector('#p_itens')
 var ShowTablet = document.querySelector('#iframe_back')
 var Close_iframe = document.querySelector('#close_iframe')
 
+var ScrollProjects = document.querySelector('#p_itens');
+
+function ScrollToProjects() {
+    ScrollProjects.scrollTo({
+        top: 350,
+        behavior: "smooth"
+    });
+}
+
+setInterval(ScrollToProjects, 3000)
+
+ScrollToProjects();
+
 //Project1
 
 ShowProject1.addEventListener('mouseenter', function(){
