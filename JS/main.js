@@ -124,6 +124,9 @@ var ShowIcon2 = document.querySelector('#proj_icon2')
 var ShowIcon3 = document.querySelector('#proj_icon3')
 var ShowBox = document.querySelector('#p_itens')
 
+var ShowTablet = document.querySelector('#iframe_back')
+var Close_iframe = document.querySelector('#close_iframe')
+
 //Project1
 
 ShowProject1.addEventListener('mouseenter', function(){
@@ -134,7 +137,16 @@ ShowProject1.addEventListener('mouseenter', function(){
     ShowCode2.style.display = 'none'
     ShowCode3.style.display = 'none'
 
-    ShowIconsDiv.style.display = 'flex'
+    ShowIconsDiv.style.animation = ''
+})
+
+ShowProject1.addEventListener('click', function(){
+    ShowTablet.style.display = 'flex'
+    ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+})
+
+Close_iframe.addEventListener('click', function(){
+    ShowTablet.style.animation = 'TabletLeave forwards 1.5s ease'
 })
 
 //Project1
@@ -232,12 +244,18 @@ function ScrollToTop(){
 }
 
 var anchor_apres = document.querySelector('#anc_apres')
+var anchor_tech = document.querySelector('#anc_tech')
 var anchor_proj = document.querySelector('#anc_proj')
 var anchor_about = document.querySelector('#anc_about')
 var anchor_cont = document.querySelector('#anc_cont')
 
+function HomeFix(){
+    anchor_apres.style.color = 'white'
+}
+
 window.addEventListener("scroll", function(){
     let scrollY = window.scrollY
+
     let scrollThresholdIni1 = 0
     let scrollThresholdFin1 = 300
     let scrollThresholdIni2 = 1101
@@ -246,6 +264,8 @@ window.addEventListener("scroll", function(){
     let scrollThresholdFin3 = 2400
     let scrollThresholdIni4 = 2401
     let scrollThresholdFin4 = 2900
+    let scrollThresholdIni5 = 301
+    let scrollThresholdFin5 = 1100
 
     if (scrollY >= scrollThresholdIni1 && scrollY <= scrollThresholdFin1){
         anchor_apres.style.color = 'white'
@@ -270,6 +290,25 @@ window.addEventListener("scroll", function(){
     } else{
         anchor_cont.style.color = ''
     }
+
+    if (scrollY >= scrollThresholdIni5 && scrollY <= scrollThresholdFin5){
+        anchor_tech.style.color = 'white'
+    } else{
+        anchor_tech.style.color = ''
+    }
 })
 
 anchor_apres.addEventListener('click', ScrollToTop)
+
+var close_number = document.querySelector('#close_number')
+var box_wpp = document.querySelector('#box_wpp')
+var wpp = document.querySelector('.fa-whatsapp')
+
+wpp.addEventListener('click', function(){
+    box_wpp.style.display = 'flex'
+})
+
+close_number.addEventListener('click', function(){
+    box_wpp.style.display = 'none'
+})
+

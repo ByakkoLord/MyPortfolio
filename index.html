@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+<body onload="HomeFix()">
     <header>
         <div class="logo_reveal" id="initial_logo">
             <i onclick="alternate()" id="logo_icon" class="fa-solid fa-power-off"></i>
@@ -21,6 +21,7 @@
         </div>
         <nav class="nav_reveal" id="initial_header">
             <a id="anc_apres" href="#" class="mec">Home</a>
+            <a id="anc_tech" href="#capabilities" class="mec">Tech</a>
             <a id="anc_proj" href="#projects" class="mec">Projects</a>
             <a id="anc_about" href="#about" class="mec">About</a>
             <a id="anc_cont" href="#contact" class="mec">Contact</a>
@@ -34,7 +35,10 @@
             <h3 class="hi_reveal_1" id="slogan">Here I turn imagination into reality.</h3>
             <p class="hi_reveal_1" id="introduce">I am a Front-End Developer on the rise, here you will find some of my <a class="intro_a" href="#capabilities">habilities</a>, <a class="intro_a" href="#projects">projects</a> and ambitions.</p>
 
-            
+                <div id="box_wpp">
+                    <a id="my_number" href="tel:+5511943079993">11 94307-9993 | Call Me</a>
+                    <i id="close_number" class="fa-solid fa-xmark"></i>
+                </div>
         </section>
 
         
@@ -75,9 +79,10 @@
                 <section class="hi_reveal_1" id="sec_itens">
                     <article id="p_itens">
                         <div id="project_img1" class="pp_itens"></div>
+                        <div id="project_img4" class="pp_itens"></div>
                         <div id="project_img2" class="pp_itens"></div>
                         <div id="project_img3" class="pp_itens"></div>
-                        <div id="project_img4" class="pp_itens"></div>
+                        
                     </article>
                 </section>
                 <section class="hi_reveal_1" id="sec_desc">
@@ -116,9 +121,7 @@
 
         <section id="contact">
             <div id="social_medias">
-                <div id="box_wpp">
-                    <a id="my_number" href="tel:+11 94307-9993">11 94307-9993 | Call Me</a>
-                </div>
+                
                 <div id="icons_social_medias">
                     <i class="blocks icon_social fa-brands fa-whatsapp"></i>
                     <i class="blocks icon_social fa-brands fa-linkedin"></i>
@@ -147,6 +150,19 @@
                     </form>
                 </div>
             </div>
+        </section>
+
+        <section id="iframe_back">
+            <div id="iframe_middle">
+
+            </div>
+            <div id="iframe_top">
+                <iframe src="assets/Projects_iframe/Relógio Digital/index.html" frameborder="0">
+                    <a href="assets/Projects_iframe/Relógio Digital/index.html" target="_blank"></a>
+                </iframe>
+                <i id="close_iframe" class="fa-solid fa-xmark"></i>
+            </div>
+            
         </section>
     </main>
 

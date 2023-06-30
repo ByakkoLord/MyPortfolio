@@ -822,3 +822,132 @@ label{
     border: none;
     background-color: #086b6e;
 }
+
+#box_wpp{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 15px 0;
+    border-bottom: 3px dashed #17e2e9;
+    box-shadow: 0 0 10px;
+    z-index: 150;
+    top: 75%;
+    width: 250px;
+    height: 50px;
+    margin: 5px;
+    margin-bottom: -50px;
+    background-color: rgb(46, 44, 63);
+}
+
+#box_wpp a{
+    color: white;
+    font-weight: 700;
+    transition: all 0.7s;
+}
+
+#box_wpp a:hover{
+    color: #17e2e9;
+}
+
+#box_wpp i{
+    font-size: 1.5em;
+    color: #17e2e9;
+    margin-left: 10px;
+    transition: all 0.7s;
+}
+
+#box_wpp i:hover{
+    scale: 130%;
+    cursor: pointer;
+}
+
+#iframe_back{
+    position: fixed;
+    top: 3.3%;
+    left: -100%;
+    display: none;
+    overflow-y: hidden;
+    margin: auto;
+    border-radius: 50px 0 50px 0;
+    box-shadow: 0 0 15px;
+    background-color: rgb(46, 44, 63);
+    width: 93%;
+    height: 93%;
+    justify-content: center;
+    z-index: 9999;
+    align-items: center;
+}
+
+#iframe_middle{
+    width: 150%;
+    height: 100px;
+    background: linear-gradient(to right, #17e2e9, #da5838);
+    position: relative;
+    top: 130vh;
+    left: -25vw;
+    margin-right: -150%;
+    margin-top: -150%;
+    animation: redundant infinite linear 5s;
+}
+
+#iframe_top{
+    position: relative;
+    display: flex;
+    margin: auto;
+    border-radius: 50px 0 50px 0;
+    box-shadow: 0 0 15px;
+    background-color: rgb(46, 44, 63);
+    width: 98%;
+    height: 98%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#iframe_top iframe{
+    margin: 20px;
+    width: 90%;
+    height: 80vh;
+    border-radius: 50px 0 50px 0;
+    box-shadow: 0 0 17px;
+    
+}
+
+#close_iframe{
+    font-size: 2em;
+    box-shadow: 0 0 10px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #17e2e9;
+    transition: all 0.6s;
+}
+
+#close_iframe:hover{
+    box-shadow: 0 0 10px #17e2e9;
+    cursor: pointer;
+    scale: 130%;
+}
+
+@keyframes TabletEnter{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 3.5%;
+    }
+}
+
+@keyframes TabletLeave{
+    0%{
+        left: 3.5%;
+    }
+    100%{
+        left: -100%;
+    }
+}
