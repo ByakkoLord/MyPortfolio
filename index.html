@@ -20,9 +20,10 @@
             </div>
         </div>
         <nav class="nav_reveal" id="initial_header">
-            <a href="#about" class="mec">About</a>
-            <a href="#projects" class="mec">Projects</a>
-            <a href="#contact" class="mec">Contact</a>
+            <a id="anc_apres" href="#" class="mec">Home</a>
+            <a id="anc_proj" href="#projects" class="mec">Projects</a>
+            <a id="anc_about" href="#about" class="mec">About</a>
+            <a id="anc_cont" href="#contact" class="mec">Contact</a>
         </nav>
     </header>
 
@@ -57,6 +58,12 @@
                 </div>
                 <div class="blocks">
                     <i id="block_icon5" class="fa-solid fa-question fa-fade"></i>
+                </div>
+                <div class="blocks">
+                    <i id="block_icon6" class="fa-solid fa-question fa-fade"></i>
+                </div>
+                <div class="blocks">
+                    <i id="block_icon6" class="fa-solid fa-question fa-fade"></i>
                 </div>
                 <div class="blocks">
                     <i id="block_icon6" class="fa-solid fa-question fa-fade"></i>
@@ -108,6 +115,14 @@
         </section>
 
         <section id="contact">
+            <div id="social_medias">
+                <div id="icons_social_medias">
+                    <i class="blocks icon_social fa-brands fa-whatsapp"></i>
+                    <i class="blocks icon_social fa-brands fa-linkedin"></i>
+                    <i class="blocks icon_social fa-brands fa-facebook"></i>
+                </div>
+                
+            </div>
             <div class="contact_effect" id="anima_back">
                 <div id="anima_middle">
                     
@@ -117,15 +132,15 @@
                     <form>
                         <section id="formdata">
                             <div class="inputform" id="form_sidea">
-                                <label for=""></label><input class="input_contact" type="text">
-                                <label for=""></label><input class="input_contact" type="text">
+                                <label for="">Full Name</label><input class="input_contact" type="text">
+                                <label for="">E-Mail Addres</label><input class="input_contact" type="text">
                             </div>
                             <div class="inputform" id="form_sideb">
-                                <label for=""></label><input class="input_contact" type="text">
-                                <label for=""></label><input class="input_contact" type="text">
+                                <label for="">Email Subject</label><input class="input_contact" type="text">
+                                <label for="">Mobile Number</label><input class="input_contact" type="text">
                             </div>
                         </section>
-                        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                        <textarea name="" placeholder="Your Message" id="textarea" cols="30" rows="10"></textarea>
                     </form>
                 </div>
             </div>
@@ -133,11 +148,19 @@
     </main>
 
     <footer>
-        This site belongs to and was created by Guilherme Fonseca da Costa
+        <p>
+            Copyright &copy; 2023 by Guilherme Fonseca da Costa | All Rights Reserved
+        </p>
+        <div id="up_btn">
+            <i id="up_real_btn" class="fa-solid fa-arrow-up"></i>
+        </div>
     </footer>
     <div id="ani_block1" class="anima_block anima"></div>
         <div id="ani_block2" class="anima_block anima"></div>
         <div id="ani_block3" class="anima_block anima"></div>
+
+    <div id="ani_circle1" class="anima_circle anima2"></div>
+    <div id="ani_circle2" class="anima_circle anima2"></div>
 
 </body>
 </html>

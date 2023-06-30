@@ -7,6 +7,7 @@ sr.reveal('.blocks', { rotate: {x: 0, y: 70, z: 0}, duration: 1500})
 sr.reveal('.titles', { rotate: {x: 0, y: 70, z: 0}, duration: 2000})
 sr.reveal('.anima', { rotate: {x: 0, y: 70, z: 0}, duration: 2500})
 sr.reveal('.contact_effect', { rotate: {x: 0, y: 70, z: 0}, duration: 1500})
+sr.reveal('.anima2', { rotate: {x: 0, y: 100, z: 70}, duration: 1500})
 
 //Scroll Reveal
 
@@ -200,3 +201,69 @@ function typeText(elementId, text, delay) {
   
   typeText("hi", "Hi, my name is", 90);
   
+var socialbtn = document.querySelectorAll('.fa-whatsapp, .fa-linkedin, .fa-facebook')
+
+socialbtn.forEach(function(btn){
+    btn.addEventListener("click", opensite)
+})
+
+function opensite(event) {
+let  clicked_btn = event.target
+
+    if (clicked_btn.classList.contains("fa-linkedin")){
+        window.open("https://www.linkedin.com/in/gui-fonseca-827818268/", "_blank")
+    } else if(clicked_btn.classList.contains("fa-facebook")){
+        window.open("", "_blank")
+    }else if(clicked_btn.contains("fa-whatsapp")){
+        window.open("", "_blank")
+    }
+}
+
+var ScrollTop_btn = document.querySelector('#up_btn')
+
+ScrollTop_btn.addEventListener("click", ScrollToTop)
+
+function ScrollToTop(){
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+    })
+    
+}
+
+var anchor_apres = document.querySelector('#anc_apres')
+var anchor_proj = document.querySelector('#anc_proj')
+var anchor_about = document.querySelector('#anc_about')
+var anchor_cont = document.querySelector('#anc_cont')
+
+window.addEventListener("scroll", function(){
+    let scrollY = window.scrollY
+    let scrollThresholdIni1 = 0
+    let scrollThresholdFin1 = 300
+    let scrollThresholdIni2 = 1101
+    let scrollThresholdFin2 = 1800
+    let scrollThresholdIni3 = 1801
+    let scrollThresholdFin3 = 2400
+
+    if (scrollY >= scrollThresholdIni1 && scrollY <= scrollThresholdFin1){
+        anchor_apres.style.color = 'white'
+    } else{
+        anchor_apres.style.color = ''
+    }
+
+    if (scrollY >= scrollThresholdIni2 && scrollY <= scrollThresholdFin2){
+        anchor_proj.style.color = 'white'
+    } else{
+        anchor_proj.style.color = ''
+    }
+
+    if (scrollY >= scrollThresholdIni3 && scrollY <= scrollThresholdFin3){
+        anchor_about.style.color = 'white'
+    } else{
+        anchor_about.style.color = ''
+    }
+
+
+})
+
+anchor_apres.addEventListener('click', ScrollToTop)
