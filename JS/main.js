@@ -144,7 +144,7 @@ ShowProject1.addEventListener('mouseenter', function(){
 ShowProject2.addEventListener('mouseenter', function(){
     ShowTitle.style.display = 'none'
     ShowDesc.style.display = 'block'
-    ShowDesc.textContent = 'This is a login page with Dark Theme and Light Theme function, plus Digital Clock'
+    ShowDesc.textContent = 'This is a login page with Dark Theme and Light Theme function, + Digital Clock'
     ShowCode2.style.display = 'flex'
     ShowCode1.style.display = 'none'
     ShowCode3.style.display = 'none'
@@ -185,14 +185,14 @@ ShowProject4.addEventListener('mouseenter', function(){
 //Digitar cada letra do #apresentation h2, uma por uma 
 
 function typeText(elementId, text, delay) {
-    var element = document.getElementById(elementId);
-    var index = 0;
+    var element = document.getElementById(elementId)
+    var index = 0
   
     function type() {
       if (index < text.length) {
-        element.textContent += text.charAt(index);
-        index++;
-        setTimeout(type, delay);
+        element.textContent += text.charAt(index)
+        index++
+        setTimeout(type, delay)
       }
     }
   
@@ -244,6 +244,8 @@ window.addEventListener("scroll", function(){
     let scrollThresholdFin2 = 1800
     let scrollThresholdIni3 = 1801
     let scrollThresholdFin3 = 2400
+    let scrollThresholdIni4 = 2401
+    let scrollThresholdFin4 = 2900
 
     if (scrollY >= scrollThresholdIni1 && scrollY <= scrollThresholdFin1){
         anchor_apres.style.color = 'white'
@@ -263,7 +265,11 @@ window.addEventListener("scroll", function(){
         anchor_about.style.color = ''
     }
 
-
+    if (scrollY >= scrollThresholdIni4 && scrollY <= scrollThresholdFin4){
+        anchor_cont.style.color = 'white'
+    } else{
+        anchor_cont.style.color = ''
+    }
 })
 
 anchor_apres.addEventListener('click', ScrollToTop)
