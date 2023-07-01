@@ -505,13 +505,30 @@ footer p{
     border-radius: 0px 45px 45px 45px;
 }
 
+#journey h2{
+    margin-bottom: 20px;
+}
 
-#journey p {
-    margin-top: 20px;
+#jorney ul{
+    width: 90%;
+}
+
+#journey li {
+    border-top: 2px solid #086b6e;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 1.3em;
     text-align: center;
     font-weight: 700;
+    transition: all 0.5s;
+}
+
+#li1:hover{
+    border-top: 2px solid #17e2e9;
+}
+#li2:hover{
+    border-top: 2px solid #17e2e9;
 }
 
 #wiam p{
