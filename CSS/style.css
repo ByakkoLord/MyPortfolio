@@ -906,13 +906,29 @@ label{
     align-items: center;
 }
 
-#iframe_top iframe{
+.isite {
     margin: 20px;
     width: 90%;
     height: 80vh;
     border-radius: 50px 0 50px 0;
     box-shadow: 0 0 17px;
     
+}
+
+#isite1{
+    display: none;
+}
+
+#isite2{
+    display: none;
+}
+
+#isite3{
+    display: none;
+}
+
+#isite4{
+    display: none;
 }
 
 #close_iframe{

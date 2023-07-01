@@ -126,20 +126,14 @@ var ShowBox = document.querySelector('#p_itens')
 
 var ShowTablet = document.querySelector('#iframe_back')
 var Close_iframe = document.querySelector('#close_iframe')
+var tablet1 = document.querySelector('#isite1')
+var tablet2 = document.querySelector('#isite2')
+var tablet3 = document.querySelector('#isite3')
+var tablet4 = document.querySelector('#isite4')
 
-var ScrollProjects = document.querySelector('#p_itens');
-
-function ScrollToProjects() {
-    ScrollProjects.scrollTo({
-        top: 350,
-        behavior: "smooth"
-    });
-}
-
-setInterval(ScrollToProjects, 3000)
-
-ScrollToProjects();
-
+Close_iframe.addEventListener('click', function(){
+    ShowTablet.style.animation = 'TabletLeave forwards 1.5s ease'
+})
 //Project1
 
 ShowProject1.addEventListener('mouseenter', function(){
@@ -148,19 +142,23 @@ ShowProject1.addEventListener('mouseenter', function(){
     ShowDesc.textContent = 'This is a digital clock that works based on information provided by the PC.'
     ShowCode1.style.display = 'flex'
     ShowCode2.style.display = 'none'
-    ShowCode3.style.display = 'none'
+    ShowCode3.style.display = 'none' 
+    ShowCode4.style.display = 'none' 
 
     ShowIconsDiv.style.animation = ''
 })
 
 ShowProject1.addEventListener('click', function(){
     ShowTablet.style.display = 'flex'
+    tablet1.style.display = 'flex'
     ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    tablet2.style.display = 'none'
+    tablet3.style.display = 'none'
+    tablet4.style.display = 'none'
+
 })
 
-Close_iframe.addEventListener('click', function(){
-    ShowTablet.style.animation = 'TabletLeave forwards 1.5s ease'
-})
+
 
 //Project1
 
@@ -174,6 +172,16 @@ ShowProject2.addEventListener('mouseenter', function(){
     ShowCode1.style.display = 'none'
     ShowCode3.style.display = 'none'
     ShowCode4.style.display = 'none'
+})
+
+ShowProject4.addEventListener('click', function(){
+    ShowTablet.style.display = 'flex'
+    tablet2.style.display = 'flex'
+    ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    tablet1.style.display = 'none'
+    tablet3.style.display = 'none'
+    tablet4.style.display = 'none'
+
 })
 
 //Project2
@@ -190,6 +198,15 @@ ShowProject3.addEventListener('mouseenter', function(){
     ShowCode2.style.display = 'none'
 })
 
+ShowProject2.addEventListener('click', function(){
+    ShowTablet.style.display = 'flex'
+    tablet4.style.display = 'flex'
+    ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    tablet2.style.display = 'none'
+    tablet3.style.display = 'none'
+    tablet1.style.display = 'none'
+})
+
 //Project3
 
 //Project4
@@ -202,6 +219,15 @@ ShowProject4.addEventListener('mouseenter', function(){
     ShowCode1.style.display = 'none'
     ShowCode2.style.display = 'none'
     ShowCode3.style.display = 'none'
+})
+
+ShowProject3.addEventListener('click', function(){
+    ShowTablet.style.display = 'flex'
+    tablet3.style.display = 'flex'
+    ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    tablet2.style.display = 'none'
+    tablet1.style.display = 'none'
+    tablet4.style.display = 'none'
 })
 
 //Project4
