@@ -17,11 +17,11 @@ var dlbtn = document.querySelector('#logo_icon')
 var header = document.querySelectorAll('#initial_header a')
 var headermec = document.querySelectorAll('.mec')
 var alert = document.querySelector('#alert')
-var hi = document.querySelector ('#hi')
-var namer = document.querySelector ('#name')
-var slogan = document.querySelector ('#slogan')
-var intro = document.querySelector ('#introduce')
-var intro_a = document.querySelector ('.intro_a')
+var hi = document.querySelector('#hi')
+var namer = document.querySelector('#name')
+var slogan = document.querySelector('#slogan')
+var intro = document.querySelector('#introduce')
+var intro_a = document.querySelectorAll('.intro_a')
 var block_icon1 = document.querySelector('#block_icon1')
 var block_icon2 = document.querySelector('#block_icon2')
 var block_icon3 = document.querySelector('#block_icon3')
@@ -62,7 +62,6 @@ function alternate(){
         namer.style.color = 'black'
         slogan.style.color = '#A6442B'
         intro.style.color = 'black'
-        intro_a.style.color = '#da5838'
 
         block_icon1.style.color = '#da5838'
         block_icon2.style.color = '#da5838'
@@ -77,6 +76,10 @@ function alternate(){
 
         anim_blocks.forEach(function(blocks){
             blocks.style.background = 'linear-gradient(to right, #da5838, #17e2e9, #17e2e9, #17e2e9)'
+        })
+
+        intro_a.forEach(function(links){
+            links.style.color = '#da5838'
         })
 
         isAlternate = true
@@ -103,7 +106,7 @@ function alternate(){
         namer.style.color = '#e6e6e6'
         slogan.style.color = '#A8AABD'
         intro.style.color = '#b4b4b4'
-        intro_a.style.color = '#17e2e9'
+
 
         block_icon2.style.color = '#17e2e9'
         block_icon1.style.color = '#17e2e9'
@@ -118,6 +121,10 @@ function alternate(){
         
         anim_blocks.forEach(function(blocks){
             blocks.style.background = 'linear-gradient(to right, #17e2e9, #da5838, #da5838,#da5838)'
+        })
+
+        intro_a.forEach(function(links){
+            links.style.color = '#17e2e9'
         })
 
         isAlternate = false
@@ -149,6 +156,7 @@ var tablet4 = document.querySelector('#isite4')
 Close_iframe.addEventListener('click', function(){
     ShowTablet.style.animation = 'TabletLeave forwards 1.5s ease'
 })
+
 //Project1
 
 ShowProject1.addEventListener('mouseenter', function(){
