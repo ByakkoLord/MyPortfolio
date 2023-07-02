@@ -309,31 +309,56 @@ window.addEventListener("scroll", function(){
     if (scrollY >= scrollThresholdIni1 && scrollY <= scrollThresholdFin1){
         anchor_apres.style.color = 'white'
     } else{
-        anchor_apres.style.color = ''
+        if (isAlternate == true){
+            anchor_apres.style.color = '#da5838'
+        }
+        else{
+            anchor_apres.style.color = '#17e2e9'
+        }
     }
 
     if (scrollY >= scrollThresholdIni2 && scrollY <= scrollThresholdFin2){
         anchor_proj.style.color = 'white'
     } else{
-        anchor_proj.style.color = ''
+        if (isAlternate == true){
+            anchor_proj.style.color = '#da5838'
+        }
+        else{
+            anchor_proj.style.color = '#17e2e9'
+        }
     }
 
     if (scrollY >= scrollThresholdIni3 && scrollY <= scrollThresholdFin3){
         anchor_about.style.color = 'white'
     } else{
-        anchor_about.style.color = ''
+        if (isAlternate == true){
+            anchor_about.style.color = '#da5838'
+        }
+        else{
+            anchor_about.style.color = '#17e2e9'
+        }
     }
 
     if (scrollY >= scrollThresholdIni4 && scrollY <= scrollThresholdFin4){
         anchor_cont.style.color = 'white'
     } else{
-        anchor_cont.style.color = ''
+        if (isAlternate == true){
+            anchor_cont.style.color = '#da5838'
+        }
+        else{
+            anchor_cont.style.color = '#17e2e9'
+        }
     }
 
     if (scrollY >= scrollThresholdIni5 && scrollY <= scrollThresholdFin5){
         anchor_tech.style.color = 'white'
     } else{
-        anchor_tech.style.color = ''
+        if (isAlternate == true){
+            anchor_tech.style.color = '#da5838'
+        }
+        else{
+            anchor_tech.style.color = '#17e2e9'
+        }
     }
 })
 
