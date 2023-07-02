@@ -7,6 +7,6 @@
 [submodule "assets/Projects_iframe/Relógio Digital/"]
     path = assets/Projects_iframe/Relógio Digital/
     url = https://github.com/ByakkoLord/MyPortfolio/tree/Fixing-Errors
-[submodule "assets/Projects_iframe/Relógio Cronometro"]
-    path = assets/Projects_iframe/Relógio Cronometro
+[submodule "assets/Projects_iframe/Relógio Cronometro/"]
+    path = assets/Projects_iframe/Relógio Cronometro/
     url = https://github.com/ByakkoLord/MyPortfolio/tree/Fixing-Errors
