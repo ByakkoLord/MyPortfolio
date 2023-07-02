@@ -28,6 +28,8 @@ var block_icon3 = document.querySelector('#block_icon3')
 var block_icon4 = document.querySelector('#block_icon4')
 var block_icon5 = document.querySelector('#block_icon5')
 var block_icon6 = document.querySelector('#block_icon6')
+var block_icon7 = document.querySelector('#block_icon7')
+var block_icon8 = document.querySelector('#block_icon8')
 var capa_title = document.querySelector('#capa_title')
 var anim_blocks = document.querySelectorAll('.anima_block')
 var isAlternate = false
@@ -68,6 +70,8 @@ function alternate(){
         block_icon4.style.color = '#da5838'
         block_icon5.style.color = '#da5838'
         block_icon6.style.color = '#da5838'
+        block_icon7.style.color = '#da5838'
+        block_icon8.style.color = '#da5838'
 
         capa_title.style.color = '#da5838'
 
@@ -107,6 +111,8 @@ function alternate(){
         block_icon4.style.color = '#17e2e9'
         block_icon5.style.color = '#17e2e9'
         block_icon6.style.color = '#17e2e9'
+        block_icon7.style.color = '#17e2e9'
+        block_icon8.style.color = '#17e2e9'
 
         capa_title.style.color = '#17e2e9'
         
