@@ -29,6 +29,7 @@ var block_icon4 = document.querySelector('#block_icon4')
 var block_icon5 = document.querySelector('#block_icon5')
 var block_icon6 = document.querySelector('#block_icon6')
 var capa_title = document.querySelector('#capa_title')
+var anim_blocks = document.querySelectorAll('.anima_block')
 var isAlternate = false
 
 function alternate(){
@@ -70,6 +71,10 @@ function alternate(){
 
         capa_title.style.color = '#da5838'
 
+        anim_blocks.forEach(function(blocks){
+            blocks.style.background = 'linear-gradient(to right, #da5838, #17e2e9, #17e2e9, #17e2e9)'
+        })
+
         isAlternate = true
     }else{
         background.style.animation = 'darktheme backwards 1s ease-in-out'
@@ -104,6 +109,10 @@ function alternate(){
         block_icon6.style.color = '#17e2e9'
 
         capa_title.style.color = '#17e2e9'
+        
+        anim_blocks.forEach(function(blocks){
+            blocks.style.background = 'linear-gradient(to right, #17e2e9, #da5838, #da5838,#da5838)'
+        })
 
         isAlternate = false
     })}}
