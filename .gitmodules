@@ -1,6 +1,12 @@
 [submodule "assets/Projects_iframe/Dark and Light Theme"]
     path = assets/Projects_iframe/Dark and Light Theme
-    url = 
+    url = https://github.com/ByakkoLord/MyPortfolio/tree/Fixing-Errors
 [submodule "assets/Projects_iframe/vemkac-project-4/"]
     path = assets/Projects_iframe/vemkac-project-4/
+    url = https://github.com/ByakkoLord/MyPortfolio/tree/Fixing-Errors
+[submodule "assets/Projects_iframe/Relógio Digital/"]
+    path = assets/Projects_iframe/Relógio Digital/
+    url = https://github.com/ByakkoLord/MyPortfolio/tree/Fixing-Errors
+[submodule "assets/Projects_iframe/Relógio Cronometro"]
+    path = assets/Projects_iframe/Relógio Cronometro
     url = https://github.com/ByakkoLord/MyPortfolio/tree/Fixing-Errors
