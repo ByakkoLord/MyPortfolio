@@ -82,6 +82,10 @@ function alternate(){
             links.style.color = '#da5838'
         })
 
+        socialbtn.forEach(function(links){
+            links.style.color = '#da5838'
+        })
+
         isAlternate = true
     }else{
         background.style.animation = 'darktheme backwards 1s ease-in-out'
@@ -124,6 +128,10 @@ function alternate(){
         })
 
         intro_a.forEach(function(links){
+            links.style.color = '#17e2e9'
+        })
+
+        socialbtn.forEach(function(links){
             links.style.color = '#17e2e9'
         })
 
@@ -275,7 +283,7 @@ function typeText(elementId, text, delay) {
   
   typeText("hi", "Hi, my name is", 90);
   
-var socialbtn = document.querySelectorAll('.fa-whatsapp, .fa-linkedin, .fa-facebook')
+var socialbtn = document.querySelectorAll('.fa-whatsapp, .fa-linkedin, .fa-github')
 
 socialbtn.forEach(function(btn){
     btn.addEventListener("click", opensite)
@@ -286,8 +294,8 @@ let  clicked_btn = event.target
 
     if (clicked_btn.classList.contains("fa-linkedin")){
         window.open("https://www.linkedin.com/in/gui-fonseca-827818268/", "_blank")
-    } else if(clicked_btn.classList.contains("fa-facebook")){
-        window.open("", "_blank")
+    } else if(clicked_btn.classList.contains("fa-github")){
+        window.open("https://github.com/ByakkoLord", "_blank")
     }else if(clicked_btn.contains("fa-whatsapp")){
         window.open("", "_blank")
     }

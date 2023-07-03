@@ -825,7 +825,6 @@ label{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 3px solid #17e2e9;
     transition: all 0.6s;
 }
 
