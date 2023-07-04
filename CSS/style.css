@@ -349,22 +349,22 @@ header{
 }
 
 #project_img2{
-    background-image: url(/assets/projects_images/DarkandLightTheme.gif);  
+    background-image: url(assets/projects_images/DarkandLightTheme.gif);  
     background-size: 100%;
     }
 
 #project_img1{
-    background-image: url(/assets/projects_images/Digital_Clock.gif);  
+    background-image: url(assets/projects_images/Digital_Clock.gif);  
     background-size: 100%;
     }
 
 #project_img3{
-    background-image: url(/assets/projects_images/StopWatch.gif);  
+    background-image: url(assets/projects_images/StopWatch.gif);  
     background-size: 100%;
     }
 
     #project_img4{
-        background-image: url(/assets/projects_images/Web_Market.gif);  
+        background-image: url(assets/projects_images/Web_Market.gif);  
         background-size: 100%;
         }
 
