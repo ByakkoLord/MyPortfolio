@@ -9,8 +9,9 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/MediaQuerys/MediaQuery1.css">
 </head>
-<body onload="HomeFix(), ScrollToProjects(), alternate()">
+<body onload="HomeFix()">
     <header>
         <div class="logo_reveal" id="initial_logo">
             <i onclick="alternate()" id="logo_icon" class="fa-solid fa-power-off"></i>
@@ -25,7 +26,10 @@
             <a id="anc_proj" href="#projects" class="mec">Projects</a>
             <a id="anc_about" href="#about" class="mec">About</a>
             <a id="anc_cont" href="#contact" class="mec">Contact</a>
+            <i id="hamburguer" class="fa-solid fa-bars"></i>
         </nav>
+        
+        </section>
     </header>
 
     <main>
@@ -58,7 +62,7 @@
                     <i id="block_icon3" class="fa-brands fa-square-js fa-fade"></i>
                 </div>
                 <div class="blocks">
-                    <i id="block_icon4" class="fa-solid fa-question fa-fade"></i>
+                    <i id="block_icon4" class="fa-brands fa-bootstrap fa-fade"></i>
                 </div>
                 <div class="blocks">
                     <i id="block_icon5" class="fa-solid fa-question fa-fade"></i>
@@ -67,10 +71,10 @@
                     <i id="block_icon6" class="fa-solid fa-question fa-fade"></i>
                 </div>
                 <div class="blocks">
-                    <i id="block_icon6" class="fa-solid fa-question fa-fade"></i>
+                    <i id="block_icon7" class="fa-solid fa-question fa-fade"></i>
                 </div>
                 <div class="blocks">
-                    <i id="block_icon6" class="fa-solid fa-question fa-fade"></i>
+                    <i id="block_icon8" class="fa-solid fa-question fa-fade"></i>
                 </div>
             </article>
         </section>
@@ -78,26 +82,36 @@
         <section id="projects">            
                 <section class="hi_reveal_1" id="sec_itens">
                     <article id="p_itens">
-                        <div id="project_img1" class="pp_itens"></div>
-                        <div id="project_img4" class="pp_itens"></div>
-                        <div id="project_img2" class="pp_itens"></div>
-                        <div id="project_img3" class="pp_itens"></div>
+                        <section id="ppp_itens">
+                            <div id="project_img1" class="pp_itens"></div>
+                            <div id="project_img4" class="pp_itens"></div>
+                            <div id="project_img2" class="pp_itens"></div>
+                            <div id="project_img3" class="pp_itens"></div>
+                        </section>
                         
                     </article>
                 </section>
+                
                 <section class="hi_reveal_1" id="sec_desc">
-                    <div id="descrip_p">
+                    
+                        
+                       
+                            <div id="descrip_p">
                         <div id="project_icons">
                             <i id="proj_icon1" class="ziz fa-brands fa-html5 fa-fade"></i>
                             <i id="proj_icon2" class="ziz fa-brands fa-css3-alt fa-fade"></i>
                             <i id="proj_icon3" class="ziz fa-brands fa-square-js fa-fade"></i>
                         </div>
-                        <h3 class="titles" id="descrip_h3">Projects.</h3>
+
+                            <h3 class="titles" id="descrip_h3">Projects.</h3>
                         <p id="descrip_real"></p>
-                        <a target="_blank" href="https://github.com/ByakkoLord/Rel-gio-Digital" id="code_btn1">CODE</a>
+
+                            <a target="_blank" href="https://github.com/ByakkoLord/Rel-gio-Digital" id="code_btn1">CODE</a>
                         <a target="_blank" href="https://github.com/ByakkoLord/Dark-and-Light-Theme" id="code_btn2">CODE</a>
                         <a target="_blank" href="https://github.com/ByakkoLord/Rel-gio-Cronometro" id="code_btn3">CODE</a>
                         <a target="_blank" href="https://github.com/ByakkoLord/WebMarket" id="code_btn4">CODE</a>
+                  
+                        
                 </section>
         </section>
 
@@ -127,9 +141,9 @@
             <div id="social_medias">
                 
                 <div id="icons_social_medias">
-                    <i class="blocks icon_social fa-brands fa-whatsapp"></i>
-                    <i class="blocks icon_social fa-brands fa-linkedin"></i>
-                    <i class="blocks icon_social fa-brands fa-facebook"></i>
+                    <i class="icon_social fa-brands fa-whatsapp"></i>
+                    <i class="icon_social fa-brands fa-linkedin"></i>
+                    <i class="icon_social fa-brands fa-github"></i>
                 </div>
                 
             </div>
@@ -164,13 +178,13 @@
                 <iframe class="isite" id="isite1" src="assets/Projects_iframe/Relógio Digital/index.html" frameborder="0">
                     <a href="assets/Projects_iframe/Relógio Digital/index.html" target="_blank"></a>
                 </iframe>
-                <iframe class="isite" id="isite2" src="assets/Projects_iframe/vemkac-project-4/" frameborder="0">
-                    <a href="assets/Projects_iframe/vemkac-project-4/" target="_blank"></a>
+                <iframe class="isite" id="isite2" src="assets/Projects_iframe/vemkac-project-4/index.html" frameborder="0">
+                    <a href="assets/Projects_iframe/vemkac-project-4/index.html" target="_blank"></a>
                 </iframe>
                 <iframe class="isite" id="isite3" src="assets/Projects_iframe/Relógio Cronometro/index.html" frameborder="0">
-                    <a href="assets/Projects_iframe/Relógio Cronometro/ Digital/index.html" target="_blank"></a>
+                    <a href="assets/Projects_iframe/Relógio Cronometro/index.html" target="_blank"></a>
                 </iframe>
-                <iframe class="isite" id="isite4" src="assets/Projects_iframe/Dark and Light Theme/" frameborder="0">
+                <iframe class="isite" id="isite4" src="assets/Projects_iframe/Dark and Light Theme/index.html" frameborder="0">
                     <a href="assets/Projects_iframe/Dark and Light Theme/index.html" target="_blank"></a>
                 </iframe>
                 <i id="close_iframe" class="fa-solid fa-xmark"></i>
@@ -180,7 +194,7 @@
     </main>
 
     <footer>
-        <p>
+        <p id="foot_p">
             Copyright &copy; 2023 by Guilherme Fonseca da Costa | All Rights Reserved
         </p>
         <div id="up_btn">
@@ -193,6 +207,18 @@
 
     <div id="ani_circle1" class="anima_circle anima2"></div>
     <div id="ani_circle2" class="anima_circle anima2"></div>
+
+    <section id="menu">
+        <div id="menu_back">
+
+        </div>
+        <div id="menu_front">
+            <a id="anc_apres" href="#" class="mec">Home</a>
+            <a id="anc_tech" href="#capabilities" class="mec">Tech</a>
+            <a id="anc_proj" href="#projects" class="mec">Projects</a>
+            <a id="anc_about" href="#about" class="mec">About</a>
+            <a id="anc_cont" href="#contact" class="mec">Contact</a>
+        </div>
 
 </body>
 </html>

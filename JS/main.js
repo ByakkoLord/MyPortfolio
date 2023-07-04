@@ -11,25 +11,57 @@ sr.reveal('.anima2', { rotate: {x: 0, y: 100, z: 70}, duration: 1500})
 
 //Scroll Reveal
 
+const menuFront = document.querySelector('#menu_front');
+var linksMenu = menuFront.querySelectorAll('a')
+const menuBack = document.querySelector('#menu_back');
+const hamburguer = document.querySelector('#hamburguer');
+
+
+hamburguer.addEventListener('click', function() {
+  menuFront.style.animation = 'menu_back_forwards forwards 1.1s';
+  menuBack.style.animation = 'menu_back_forwards forwards 0.6s';
+  
+
+  setTimeout(function() {
+    document.addEventListener('click', closeMenu);
+  }, 100);
+});
+
+function closeMenu(event) {
+  if (!menuFront.contains(event.target)) {
+    menuFront.style.animation = 'menu_back_backwards forwards 0.6s';
+    menuBack.style.animation = 'menu_back_backwards forwards 1.1s';
+   
+    document.removeEventListener('click', closeMenu);
+  }
+}
 
 var background = document.querySelector('body')
 var dlbtn = document.querySelector('#logo_icon')
 var header = document.querySelectorAll('#initial_header a')
 var headermec = document.querySelectorAll('.mec')
 var alert = document.querySelector('#alert')
-var hi = document.querySelector ('#hi')
-var namer = document.querySelector ('#name')
-var slogan = document.querySelector ('#slogan')
-var intro = document.querySelector ('#introduce')
-var intro_a = document.querySelector ('.intro_a')
+var hi = document.querySelector('#hi')
+var namer = document.querySelector('#name')
+var slogan = document.querySelector('#slogan')
+var intro = document.querySelector('#introduce')
+var intro_a = document.querySelectorAll('.intro_a')
 var block_icon1 = document.querySelector('#block_icon1')
 var block_icon2 = document.querySelector('#block_icon2')
 var block_icon3 = document.querySelector('#block_icon3')
 var block_icon4 = document.querySelector('#block_icon4')
 var block_icon5 = document.querySelector('#block_icon5')
 var block_icon6 = document.querySelector('#block_icon6')
+var block_icon7 = document.querySelector('#block_icon7')
+var block_icon8 = document.querySelector('#block_icon8')
 var capa_title = document.querySelector('#capa_title')
 var anim_blocks = document.querySelectorAll('.anima_block')
+var about_title = document.querySelector('#about_title')
+var foot = document.querySelector('footer')
+var foot_p = document.querySelector('#foot_p')
+var up_real_btn = document.querySelector('#up_real_btn')
+var up_btn = document.querySelector('#up_btn')
+
 var isAlternate = false
 
 function alternate(){
@@ -60,20 +92,35 @@ function alternate(){
         namer.style.color = 'black'
         slogan.style.color = '#A6442B'
         intro.style.color = 'black'
-        intro_a.style.color = '#da5838'
 
-        block_icon1.style.color = '#da5838'
-        block_icon2.style.color = '#da5838'
-        block_icon3.style.color = '#da5838'
-        block_icon4.style.color = '#da5838'
-        block_icon5.style.color = '#da5838'
-        block_icon6.style.color = '#da5838'
+        hamburguer.style.color = '#da5838'
+
+        menuBack.style.background = '#da5838'
+
+        linksMenu.forEach(function(links){
+            links.style.borderBottom = '2px solid #da5838'
+        })
+
+        about_title.style.color = '#da5838'
 
         capa_title.style.color = '#da5838'
 
         anim_blocks.forEach(function(blocks){
             blocks.style.background = 'linear-gradient(to right, #da5838, #17e2e9, #17e2e9, #17e2e9)'
         })
+
+        intro_a.forEach(function(links){
+            links.style.color = '#da5838'
+        })
+
+        socialbtn.forEach(function(links){
+            links.style.color = '#da5838'
+        })
+
+        foot.style.borderTop = '2px dashed #da5838'
+        foot_p.style.color = 'black'
+        up_real_btn.style.color = '#da5838'
+        up_btn.style.border = '3px solid #da5838'
 
         isAlternate = true
     }else{
@@ -99,7 +146,16 @@ function alternate(){
         namer.style.color = '#e6e6e6'
         slogan.style.color = '#A8AABD'
         intro.style.color = '#b4b4b4'
-        intro_a.style.color = '#17e2e9'
+        foot.style.borderTop = '2px dashed #17e2e9'
+        foot_p.style.color = 'white'
+
+        hamburguer.style.color = '#17e2e9'
+
+        menuBack.style.background = '#17e2e9'
+
+        linksMenu.forEach(function(links){
+            links.style.borderBottom = '2px solid #17e2e9'
+        })
 
         block_icon2.style.color = '#17e2e9'
         block_icon1.style.color = '#17e2e9'
@@ -107,12 +163,25 @@ function alternate(){
         block_icon4.style.color = '#17e2e9'
         block_icon5.style.color = '#17e2e9'
         block_icon6.style.color = '#17e2e9'
-
+        block_icon7.style.color = '#17e2e9'
+        block_icon8.style.color = '#17e2e9'
+        about_title.style.color = '#17e2e9'
         capa_title.style.color = '#17e2e9'
         
         anim_blocks.forEach(function(blocks){
             blocks.style.background = 'linear-gradient(to right, #17e2e9, #da5838, #da5838,#da5838)'
         })
+
+        intro_a.forEach(function(links){
+            links.style.color = '#17e2e9'
+        })
+
+        socialbtn.forEach(function(links){
+            links.style.color = '#17e2e9'
+        })
+
+        up_real_btn.style.color = '#17e2e9'
+        up_btn.style.border = '3px solid #17e2e9'
 
         isAlternate = false
     })}}
@@ -143,6 +212,7 @@ var tablet4 = document.querySelector('#isite4')
 Close_iframe.addEventListener('click', function(){
     ShowTablet.style.animation = 'TabletLeave forwards 1.5s ease'
 })
+
 //Project1
 
 ShowProject1.addEventListener('mouseenter', function(){
@@ -261,7 +331,7 @@ function typeText(elementId, text, delay) {
   
   typeText("hi", "Hi, my name is", 90);
   
-var socialbtn = document.querySelectorAll('.fa-whatsapp, .fa-linkedin, .fa-facebook')
+var socialbtn = document.querySelectorAll('.fa-whatsapp, .fa-linkedin, .fa-github')
 
 socialbtn.forEach(function(btn){
     btn.addEventListener("click", opensite)
@@ -272,8 +342,8 @@ let  clicked_btn = event.target
 
     if (clicked_btn.classList.contains("fa-linkedin")){
         window.open("https://www.linkedin.com/in/gui-fonseca-827818268/", "_blank")
-    } else if(clicked_btn.classList.contains("fa-facebook")){
-        window.open("", "_blank")
+    } else if(clicked_btn.classList.contains("fa-github")){
+        window.open("https://github.com/ByakkoLord", "_blank")
     }else if(clicked_btn.contains("fa-whatsapp")){
         window.open("", "_blank")
     }
@@ -304,16 +374,30 @@ function HomeFix(){
 window.addEventListener("scroll", function(){
     let scrollY = window.scrollY
 
-    let scrollThresholdIni1 = 0
-    let scrollThresholdFin1 = 300
-    let scrollThresholdIni2 = 1101
-    let scrollThresholdFin2 = 1800
-    let scrollThresholdIni3 = 1801
-    let scrollThresholdFin3 = 2400
-    let scrollThresholdIni4 = 2401
-    let scrollThresholdFin4 = 2900
-    let scrollThresholdIni5 = 301
-    let scrollThresholdFin5 = 1100
+    var scrollThresholdIni1 = 0
+    var scrollThresholdFin1 = 300
+    var scrollThresholdIni2 = 1101
+    var scrollThresholdFin2 = 1800
+    var scrollThresholdIni3 = 1801
+    var scrollThresholdFin3 = 2400
+    var scrollThresholdIni4 = 2401
+    var scrollThresholdFin4 = 2900
+    var scrollThresholdIni5 = 301
+    var scrollThresholdFin5 = 1100
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        var scrollThresholdIni1 = 0
+        var scrollThresholdFin1 = 500
+        var scrollThresholdIni2 = 1201
+        var scrollThresholdFin2 = 1900
+        var scrollThresholdIni3 = 1901
+        var scrollThresholdFin3 = 3100
+        var scrollThresholdIni4 = 3101
+        var scrollThresholdFin4 = 4000
+        var scrollThresholdIni5 = 501
+        var scrollThresholdFin5 = 1200
+        console.log("A media query está ativa!");
+      }
 
     if (scrollY >= scrollThresholdIni1 && scrollY <= scrollThresholdFin1){
         anchor_apres.style.color = 'white'

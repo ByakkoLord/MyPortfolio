@@ -20,11 +20,13 @@
 }
 
 body{
+    overflow-x: hidden;
     background: linear-gradient(120deg, #202024, #A8AABD,#9FB1BD, #AC9FBD);
     background-repeat: no-repeat;
     background-size: 900% 900%;
     scroll-behavior: smooth;
     height: 100vh;
+    width: 100vw;
     animation: none;
 }
 
@@ -59,6 +61,77 @@ header{
     align-items: center;
     width: 50%;
     height: 100%;
+}
+
+#hamburguer{
+    display: none;
+    color: #17e2e9;
+    font-size: 2.2em;
+    margin-right: 30px;
+    transition: all 0.6s;
+}
+
+#hamburguer:hover{
+    color: #086b6e;
+}
+
+#menu_back{
+    position: fixed;
+    top: 0;
+    right: -200px;
+    background-color: #17e2e9;
+    width: 200px;
+    height: 320px;
+    border-radius: 5px;
+    z-index: 999;
+    animation: none;
+}
+
+#menu_front{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: -210px;
+    background-color: rgb(46, 44, 63);
+    width: 201px;
+    height: 321px;
+    border-radius: 5px;
+    z-index: 999;
+    animation: none;
+}
+
+#menu_front a{
+    font-size: 1.8em;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid #17e2e9;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+#menu_front a:hover{
+    color: #086b6e;
+}
+
+@keyframes menu_back_forwards{
+    0%{
+        right: -200px;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+@keyframes menu_back_backwards{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: -210px;
+    }
 }
 
 #initial_header{
@@ -825,7 +898,6 @@ label{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 3px solid #17e2e9;
     transition: all 0.6s;
 }
 
