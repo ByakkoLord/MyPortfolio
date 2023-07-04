@@ -9,8 +9,9 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/MediaQuerys/MediaQuery1.css">
 </head>
-<body onload="HomeFix(), ScrollToProjects(), alternate()">
+<body onload="HomeFix()">
     <header>
         <div class="logo_reveal" id="initial_logo">
             <i onclick="alternate()" id="logo_icon" class="fa-solid fa-power-off"></i>
@@ -25,7 +26,10 @@
             <a id="anc_proj" href="#projects" class="mec">Projects</a>
             <a id="anc_about" href="#about" class="mec">About</a>
             <a id="anc_cont" href="#contact" class="mec">Contact</a>
+            <i id="hamburguer" class="fa-solid fa-bars"></i>
         </nav>
+        
+        </section>
     </header>
 
     <main>
@@ -58,7 +62,7 @@
                     <i id="block_icon3" class="fa-brands fa-square-js fa-fade"></i>
                 </div>
                 <div class="blocks">
-                    <i id="block_icon4" class="fa-solid fa-question fa-fade"></i>
+                    <i id="block_icon4" class="fa-brands fa-bootstrap fa-fade"></i>
                 </div>
                 <div class="blocks">
                     <i id="block_icon5" class="fa-solid fa-question fa-fade"></i>
@@ -190,7 +194,7 @@
     </main>
 
     <footer>
-        <p>
+        <p id="foot_p">
             Copyright &copy; 2023 by Guilherme Fonseca da Costa | All Rights Reserved
         </p>
         <div id="up_btn">
@@ -203,6 +207,18 @@
 
     <div id="ani_circle1" class="anima_circle anima2"></div>
     <div id="ani_circle2" class="anima_circle anima2"></div>
+
+    <section id="menu">
+        <div id="menu_back">
+
+        </div>
+        <div id="menu_front">
+            <a id="anc_apres" href="#" class="mec">Home</a>
+            <a id="anc_tech" href="#capabilities" class="mec">Tech</a>
+            <a id="anc_proj" href="#projects" class="mec">Projects</a>
+            <a id="anc_about" href="#about" class="mec">About</a>
+            <a id="anc_cont" href="#contact" class="mec">Contact</a>
+        </div>
 
 </body>
 </html>
