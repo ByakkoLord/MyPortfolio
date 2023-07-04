@@ -130,12 +130,12 @@
 
     #initial_logo{
         display: flex;
-        width: 20%;
+        width: 50%;
     }
 
     #initial_header{
         display: flex;
-        width: 80%;
+        width: 50%;
     }
 
     #initial_header a{
@@ -143,12 +143,17 @@
     }
 
     #apresentation{
-        margin-left: 50px;
+        margin-left: 40px;
         height: 80vh;
     }
 
+    #apresentation h1{
+        color: #e6e6e6;
+        font-size: 3.6em;
+    }
+
     #apresentation h3{
-        font-size: 2em;
+        font-size: 1.4em;
     }
 
     .anima_block{
