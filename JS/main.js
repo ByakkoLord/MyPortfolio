@@ -230,7 +230,12 @@ ShowProject1.addEventListener('mouseenter', function(){
 ShowProject1.addEventListener('click', function(){
     ShowTablet.style.display = 'flex'
     tablet1.style.display = 'flex'
-    ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    } else{
+        ShowTablet.style.display = 'none'
+    }
+    
     tablet2.style.display = 'none'
     tablet3.style.display = 'none'
     tablet4.style.display = 'none'
@@ -256,7 +261,11 @@ ShowProject2.addEventListener('mouseenter', function(){
 ShowProject4.addEventListener('click', function(){
     ShowTablet.style.display = 'flex'
     tablet2.style.display = 'flex'
-    ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    } else{
+        ShowTablet.style.display = 'none'
+    }
     tablet1.style.display = 'none'
     tablet3.style.display = 'none'
     tablet4.style.display = 'none'
@@ -280,7 +289,11 @@ ShowProject3.addEventListener('mouseenter', function(){
 ShowProject2.addEventListener('click', function(){
     ShowTablet.style.display = 'flex'
     tablet4.style.display = 'flex'
-    ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    } else{
+        ShowTablet.style.display = 'none'
+    }
     tablet2.style.display = 'none'
     tablet3.style.display = 'none'
     tablet1.style.display = 'none'
@@ -303,7 +316,11 @@ ShowProject4.addEventListener('mouseenter', function(){
 ShowProject3.addEventListener('click', function(){
     ShowTablet.style.display = 'flex'
     tablet3.style.display = 'flex'
-    ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        ShowTablet.style.animation = 'TabletEnter forwards 1.5s ease'
+    } else{
+        ShowTablet.style.display = 'none'
+    }
     tablet2.style.display = 'none'
     tablet1.style.display = 'none'
     tablet4.style.display = 'none'
@@ -385,6 +402,8 @@ window.addEventListener("scroll", function(){
     var scrollThresholdIni5 = 301
     var scrollThresholdFin5 = 1100
 
+    
+
     if (window.matchMedia("(max-width: 768px)").matches) {
         var scrollThresholdIni1 = 0
         var scrollThresholdFin1 = 500
@@ -396,7 +415,6 @@ window.addEventListener("scroll", function(){
         var scrollThresholdFin4 = 4000
         var scrollThresholdIni5 = 501
         var scrollThresholdFin5 = 1200
-        console.log("A media query está ativa!");
       }
 
     if (scrollY >= scrollThresholdIni1 && scrollY <= scrollThresholdFin1){
