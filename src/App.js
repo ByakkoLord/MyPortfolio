@@ -24,9 +24,9 @@ function App() {
         </article>
       </section>
 
-      <section id='Tecnologies' className='overflow-hidden w-full h-screen shadowBox tertiaryColor p-10'>
+      <section id='Tecnologies' className='flex flex-col justify-center items-center overflow-hidden w-full h-screen shadowBox tertiaryColor p-10'>
           <h1 className='text-7xl primaryColor text-center font-extrabold'>Technologies</h1>
-          <section className='grid gap-5 grid-cols-3 grid-rows-3 w-96'>
+          <section className='grid gap-5 grid-cols-3 grid-rows-3 w-96 mt-11'>
             <Technologies icon='fa-brands fa-html5 tech'/>
             <Technologies icon='fa-brands fa-css3-alt tech'/>
             <Technologies icon='fa-brands fa-square-js tech'/>
@@ -40,8 +40,11 @@ function App() {
             <Technologies icon='fa-brands fa-question tech'/>
           </section>
           <section>
-
+            
           </section>
+      </section>
+      <section id='Projects' className='flex flex-col justify-center items-center overflow-hidden w-full h-screen p-10'>
+        
       </section>
     </div>
     
