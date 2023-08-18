@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Header from './components/Header.js'
+import Technologies from './components/Technologies.js'
 
 function App() {
     useEffect(() => {
@@ -21,8 +22,19 @@ function App() {
         </article>
       </section>
 
-      <section id='Tecnologies'>
-        
+      <section id='Tecnologies' className='overflow-hidden w-full h-screen shadowBox tertiaryColor p-10'>
+          <h1 className='text-7xl primaryColor text-center font-extrabold'>Technologies</h1>
+          <section className='grid '>
+            <Technologies icon='fa-brands fa-html5 tech'/>
+            <Technologies icon='fa-brands fa-css3-alt tech'/>
+            <Technologies icon='fa-brands fa-react tech'/>
+            <Technologies icon='fa-brands fa-square-js tech'/>
+            <Technologies icon='fa-brands fa-square-js tech'/>
+            <Technologies icon='fa-brands fa-square-js tech'/>
+          </section>
+          <section>
+
+          </section>
       </section>
     </div>
     

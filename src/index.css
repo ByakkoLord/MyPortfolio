@@ -10,6 +10,13 @@
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
   }
+  ::-webkit-scrollbar{
+    background-color: #29292c;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: rgba(128, 128, 128, 0.664);
+    border-radius: 25px;
+  }
   body{
     background-color: #232327;
   }
@@ -19,10 +26,28 @@
   .secondaryColor{
     color: #da5838;
   }
+  .tertiaryColor{
+    background-color: #29292c;
+  }
+  .quaternaryColor{
+    background-color: #2e2c3f;
+  }
   .textColor1{
     color: #a8aabd;
   }
   .textColor2{
     color: #e6e6e6;
+  }
+  .shadowBox{
+    box-shadow: 0 0 10px black;
+  }
+  .roundedPers1{
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: #17e2e9 dashed 2px;
+  }
+  .tech{
+    color: #17e2e9;
+    font-size: 5em;
   }
 }
