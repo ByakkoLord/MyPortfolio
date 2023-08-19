@@ -1,10 +1,6 @@
-import styles from './Projects.module.css'
-
-function Projects({image, alt}){
+function Projects({indexProjects, additionalClass}){
     return(
-        <div className={styles.projectBox}>
-    
-        </div>
+        <div className={`${indexProjects} ${additionalClass}`}></div>
     )
 }
 

@@ -1,4 +1,36 @@
-.projectBox{
+.projectBox1{
+    background: url(../assets/ProjectImages/Web_Market.gif);
+    background-size: 100%;
+    width: 20rem;
+    height: 20rem;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    box-shadow: 0 0 10px black;
+    background-color: gray;
+}
+.projectBox2{
+    background: url(../assets/ProjectImages/StopWatch.gif);
+    background-size: 100%;
+    width: 20rem;
+    height: 20rem;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    box-shadow: 0 0 10px black;
+    background-color: gray;
+}
+.projectBox3{
+    background: url(../assets/ProjectImages/DarkandLightTheme.gif);
+    background-size: 100%;
+    width: 20rem;
+    height: 20rem;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    box-shadow: 0 0 10px black;
+    background-color: gray;
+}
+.projectBox4{
+    background: url(../assets/ProjectImages/Digital_Clock.gif);
+    background-size: 100%;
     width: 20rem;
     height: 20rem;
     border-bottom-right-radius: 35px;

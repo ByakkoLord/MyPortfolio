@@ -1,11 +1,8 @@
 import Header from './components/Header.js'
 import Technologies from './components/Technologies.js'
 import TailwindLogo from './assets/tailwind.png'
-import ProjectImage1 from './assets/ProjectImages/Web_Market.gif'
-import ProjectImage2 from './assets/ProjectImages/DarkandLightTheme.gif'
-import ProjectImage3 from './assets/ProjectImages/Digital_Clock.gif'
-import ProjectImage4 from './assets/ProjectImages/StopWatch.gif'
 import Projects from './components/Projects.js'
+import styles from './components/Projects.module.css';
 
 function App() {
   
@@ -48,10 +45,13 @@ function App() {
       </section>
       <section id='Projects' className='flex justify-center items-center flex-col overflow-hidden w-full h-screen p-10'>
         <h1 className='text-7xl primaryColor text-center font-extrabold'>Projects</h1>
-        <article id='ArtProjects' className=' mt-16 flex flex-col items-center roundedPers1 shadowBox justify-center w-96 h-96 quaternaryColor'>
-    
-            <Projects/>
-          
+        <article id='ArtProjects' className='mt-16 ml overflow-auto items-center roundedPers1 shadowBox justify-center w-96 h-96 quaternaryColor'>
+          <div className='flex flex-col items-center roundedPers1 justify-center'>
+              <Projects indexProjects={styles.projectBox1} additionalClass={'mb-10 mt-6'}/>
+              <Projects indexProjects={styles.projectBox2} additionalClass={'mb-10'}/>
+              <Projects indexProjects={styles.projectBox3} additionalClass={'mb-10'}/>
+              <Projects indexProjects={styles.projectBox4} additionalClass={'mb-6'}/>
+          </div>
         </article>
       </section>
     </div>
