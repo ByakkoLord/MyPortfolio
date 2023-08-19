@@ -1,0 +1,8 @@
+.projectBox{
+    width: 20rem;
+    height: 20rem;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    box-shadow: 0 0 10px black;
+    background-color: gray;
+}

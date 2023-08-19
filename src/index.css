@@ -46,6 +46,10 @@
     border-top-left-radius: 15px;
     border-bottom: #17e2e9 dashed 2px;
   }
+  .roundedPers2{
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+  }
   .tech{
     color: #17e2e9;
     font-size: 5em;

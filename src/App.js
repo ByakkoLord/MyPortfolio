@@ -1,6 +1,10 @@
 import Header from './components/Header.js'
 import Technologies from './components/Technologies.js'
 import TailwindLogo from './assets/tailwind.png'
+import ProjectImage1 from './assets/ProjectImages/Web_Market.gif'
+import ProjectImage2 from './assets/ProjectImages/DarkandLightTheme.gif'
+import ProjectImage3 from './assets/ProjectImages/Digital_Clock.gif'
+import ProjectImage4 from './assets/ProjectImages/StopWatch.gif'
 import Projects from './components/Projects.js'
 
 function App() {
@@ -44,8 +48,8 @@ function App() {
       </section>
       <section id='Projects' className='flex justify-center items-center flex-col overflow-hidden w-full h-screen p-10'>
         <h1 className='text-7xl primaryColor text-center font-extrabold'>Projects</h1>
-        <article id='ArtProjects' className='flex flex-col p-5 w-96 h-80 quaternaryColor'>
-          
+        <article id='ArtProjects' className=' mt-16 flex flex-col items-center roundedPers1 shadowBox justify-center w-96 h-96 quaternaryColor'>
+    
             <Projects/>
           
         </article>
