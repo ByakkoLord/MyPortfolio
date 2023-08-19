@@ -1,17 +1,46 @@
+import React, { useEffect } from 'react'
 import Header from './components/Header.js'
 import Technologies from './components/Technologies.js'
 import TailwindLogo from './assets/tailwind.png'
 import Projects from './components/Projects.js'
-import styles from './components/Projects.module.css';
+import styles from './components/Projects.module.css'
 
 function App() {
   
+  function typeText(elementClass, text) {
+    var elements = document.querySelectorAll(elementClass);
+
+    function type() {
+      elements.forEach(element => {
+        var index = 0;
+        var originalText = element.textContent;
+        
+        function typeCharacter() {
+          if (index < text.length) {
+            element.textContent = originalText + text.substring(0, index + 1);
+            index++;
+          } else {
+            clearInterval(interval);
+          }
+        }
+        
+        var interval = setInterval(typeCharacter, 90);
+      });
+    }
+
+    type();
+  }
+
+  useEffect(() => {
+    typeText(".hi", "Hi, my name is", 90);
+  }, []);
+
   return (
     <div className="App overflow-x-hidden">
       <Header/>
 
       <section id='Home' className='flex justify-center items-start ml-24 flex-col w-full h-screen'>
-        <h3 className='primaryColor text-2xl font-extrabold mb-6'>Hi, my name is</h3>
+        <h3 className='hi primaryColor text-2xl font-extrabold mb-6'>&gt; </h3>
         <h1 className='textColor2 text-7xl font-extrabold mb-6'>ByakkoLord.</h1>
         <h2 className='textColor1 text-6xl font-extrabold mb-6'>Here i turn imagination into reality</h2>
         <p className='textColor1 w-96 text-xl font-medium mb-6'>I am a Front-End Developer on the rise, here you will find some of my <span className='primaryColor'>habilities</span>, <span className='primaryColor'>projects</span> and ambitions.</p>
