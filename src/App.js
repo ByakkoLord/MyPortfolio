@@ -1,12 +1,10 @@
-import { useEffect } from 'react';
 import Header from './components/Header.js'
 import Technologies from './components/Technologies.js'
 import TailwindLogo from './assets/tailwind.png'
+import Projects from './components/Projects.js'
 
 function App() {
-    useEffect(() => {
-      document.title = 'MyPortfolio'
-    })
+  
   return (
     <div className="App overflow-x-hidden">
       <Header/>
@@ -31,21 +29,26 @@ function App() {
             <Technologies name='CSS3' icon='fa-brands fa-css3-alt tech'/>
             <Technologies name='JavaScript' icon='fa-brands fa-square-js tech'/>
             <Technologies name='ReactJs' icon='fa-brands fa-react tech'/>
-            <div className="flex toolactive justify-center items-center w-28 h-28 quaternaryColor shadow-md shadow-black roundedPers1">
+            <div className="flex toolactive hover:scale-110 transition-all hover:cursor-pointer justify-center items-center w-28 h-28 quaternaryColor shadow-md shadow-black roundedPers1">
               <img src={TailwindLogo} className='w-72' alt='TailwindCSS'/>
               <span className="tooltip items-center pl-4 pr-4 h-11  bg-slate-600 text-white rounded-xl">TailwindCSS</span>
             </div>   
             <Technologies name='Git' icon='fa-brands fa-git-alt tech'/>
-            <Technologies name='In Progress' icon='fa-brands fa-question tech'/>
-            <Technologies name='In Progress' icon='fa-brands fa-question tech'/>
-            <Technologies name='In Progress' icon='fa-brands fa-question tech'/>
+            <Technologies name='Learning' icon='fa-brands fa-question tech'/>
+            <Technologies name='Learning' icon='fa-brands fa-question tech'/>
+            <Technologies name='Learning' icon='fa-brands fa-question tech'/>
           </section>
           <section>
             
           </section>
       </section>
-      <section id='Projects' className='flex justify-center overflow-hidden w-full h-screen p-10'>
-        <h1>Projects</h1>
+      <section id='Projects' className='flex justify-center items-center flex-col overflow-hidden w-full h-screen p-10'>
+        <h1 className='text-7xl primaryColor text-center font-extrabold'>Projects</h1>
+        <article id='ArtProjects' className='flex flex-col p-5 w-96 h-80 quaternaryColor'>
+          
+            <Projects/>
+          
+        </article>
       </section>
     </div>
     
