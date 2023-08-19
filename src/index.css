@@ -50,4 +50,12 @@
     color: #17e2e9;
     font-size: 5em;
   }
+
+  .tooltip{
+    position: absolute;
+    display: none;
+  }
+  .toolactive:hover .tooltip{
+    display: flex;
+  }
 }

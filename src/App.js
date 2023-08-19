@@ -27,24 +27,25 @@ function App() {
       <section id='Tecnologies' className='flex flex-col justify-center items-center overflow-hidden w-full h-screen shadowBox tertiaryColor p-10'>
           <h1 className='text-7xl primaryColor text-center font-extrabold'>Technologies</h1>
           <section className='grid gap-5 grid-cols-3 grid-rows-3 w-96 mt-11'>
-            <Technologies icon='fa-brands fa-html5 tech'/>
-            <Technologies icon='fa-brands fa-css3-alt tech'/>
-            <Technologies icon='fa-brands fa-square-js tech'/>
-            <Technologies icon='fa-brands fa-react tech'/>
-            <div className="flex justify-center items-center w-28 h-28 quaternaryColor shadow-md shadow-black roundedPers1">
+            <Technologies name='HTML5' icon='fa-brands fa-html5 tech'/>
+            <Technologies name='CSS3' icon='fa-brands fa-css3-alt tech'/>
+            <Technologies name='JavaScript' icon='fa-brands fa-square-js tech'/>
+            <Technologies name='ReactJs' icon='fa-brands fa-react tech'/>
+            <div className="flex toolactive justify-center items-center w-28 h-28 quaternaryColor shadow-md shadow-black roundedPers1">
               <img src={TailwindLogo} className='w-72' alt='TailwindCSS'/>
+              <span className="tooltip items-center pl-4 pr-4 h-11  bg-slate-600 text-white rounded-xl">TailwindCSS</span>
             </div>   
-            <Technologies icon='fa-brands fa-git-alt tech'/>
-            <Technologies icon='fa-brands fa-question tech'/>
-            <Technologies icon='fa-brands fa-question tech'/>
-            <Technologies icon='fa-brands fa-question tech'/>
+            <Technologies name='Git' icon='fa-brands fa-git-alt tech'/>
+            <Technologies name='In Progress' icon='fa-brands fa-question tech'/>
+            <Technologies name='In Progress' icon='fa-brands fa-question tech'/>
+            <Technologies name='In Progress' icon='fa-brands fa-question tech'/>
           </section>
           <section>
             
           </section>
       </section>
-      <section id='Projects' className='flex flex-col justify-center items-center overflow-hidden w-full h-screen p-10'>
-        
+      <section id='Projects' className='flex justify-center overflow-hidden w-full h-screen p-10'>
+        <h1>Projects</h1>
       </section>
     </div>
     
