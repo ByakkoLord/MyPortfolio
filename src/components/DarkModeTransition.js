@@ -1,6 +1,7 @@
 import styles from './DarkModeTransition.module.css'
 
 function DarkModeTransition(){
+    
     return(
         <>
             <div className={styles.boxBlue}>
