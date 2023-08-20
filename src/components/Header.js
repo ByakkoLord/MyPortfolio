@@ -8,6 +8,7 @@ function Header() {
                     <li className="pr-6">Tech</li>
                     <li className="pr-6">Projects</li>
                     <li className="pr-6">About</li>
+                    <li className="pr-6">Contact</li>
                 </ul>
             </nav>
         </section>

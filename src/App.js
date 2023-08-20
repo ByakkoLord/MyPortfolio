@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from './components/Header.js'
 import Technologies from './components/Technologies.js'
+import DarkModeTransition from './components/DarkModeTransition.js'
 import TailwindLogo from './assets/tailwind.png'
 import Projects from './components/Projects.js'
 import styles from './components/Projects.module.css'
@@ -38,6 +39,7 @@ function App() {
   return (
     <div className="App overflow-x-hidden">
       <Header/>
+      <DarkModeTransition/>
 
       <section id='Home' className='flex justify-center items-start ml-24 flex-col w-full h-screen'>
         <h3 className='hi primaryColor text-2xl font-extrabold mb-6'>&gt; </h3>
@@ -81,6 +83,21 @@ function App() {
               <Projects indexProjects={styles.projectBox3} additionalClass={'mb-10'}/>
               <Projects indexProjects={styles.projectBox4} additionalClass={'mb-6'}/>
           </div>
+        </article>
+      </section>
+
+      <section id='About' className='flex justify-evenly items-center overflow-hidden w-full h-screen shadowBox tertiaryColor p-10'>
+        <article className='w-96 h-96 quaternaryColor roundedPers1 shadowBox'>
+          <h3 className='primaryColor font-semibold text-4xl text-center mt-4'>Who am i?</h3>
+          <p className='text-white font-semibold text-2xl text-center mt-6 ml-6 mr-6'>Hello, I'm ByakkoLoad or Guilherme Fonseca, I'm 19 years old, I'm a Front-End programmer, currently familiar with technologies (HTML, CSS and JavaScript) and I try to keep evolving according to the market and its front.</p>
+        </article>
+        <article className='flex flex-col justify-center items-center w-96 h-96'>
+          <ul>
+            <li className='borderAbout pl-5 mb-5 text-white'>He completed the technical course in electrotechnics during high school at ETEC.</li>
+            <li className='borderAbout pl-5 mb-5 text-white'>Currently studying Bachelor of Science in Computer Science.</li>
+            <li className='borderAbout pl-5 mb-5 text-white'>In Progress</li>
+            <li className='borderAbout pl-5 mb-5 text-white'>In Progress</li>
+          </ul>
         </article>
       </section>
     </div>

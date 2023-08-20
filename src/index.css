@@ -23,8 +23,14 @@
   .primaryColor{
     color: #17e2e9;
   }
+  .primaryColorBg{
+    background-color: #17e2e9;
+  }
   .secondaryColor{
     color: #da5838;
+  }
+  .secondaryColorBg{
+    background-color: #da5838;
   }
   .tertiaryColor{
     background-color: rgba(0, 0, 0, 0.137);
@@ -61,5 +67,8 @@
   }
   .toolactive:hover .tooltip{
     display: flex;
+  }
+  .borderAbout{
+    border-left: #17e2e9 solid 4px;
   }
 }
