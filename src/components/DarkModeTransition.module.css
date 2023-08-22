@@ -16,6 +16,10 @@
     animation: transition2 forwards 3s;
 }
 
+.redBackground{
+    background-color: purple;
+}
+
 @keyframes transition1{
     0%{
         right: -100vw;

@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 function Header() {
 
-    const [isAlternate, setIsAlternate] = useState(false);
+    const [isAlternate, setIsAlternate] = useState(false)
 
     const Alternate = () => {
-        setIsAlternate(!isAlternate);
-        document.body.style.backgroundColor = isAlternate ? '#232327' : '#a8aabd'; // Altere as cores como desejar
+        setIsAlternate(!isAlternate)
+        document.body.style.backgroundColor = isAlternate ? '#232327' : '#a3aebd'
     };
     return (
         <section className='flex fixed bg-transparent justify-between w-full h-24 items-center'>

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import Header from './components/Header.js'
-import Technologies from './components/Technologies.js'
-import DarkModeTransition from './components/DarkModeTransition.js'
+import Header from './components/Header.jsx'
+import Technologies from './components/Technologies.jsx'
+import DarkModeTransition from './components/DarkModeTransition.jsx'
 import TailwindLogo from './assets/tailwind.png'
-import Projects from './components/Projects.js'
+import Projects from './components/Projects.jsx'
 import styles from './components/Projects.module.css'
 
 function App() {
