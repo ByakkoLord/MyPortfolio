@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Technologies from './components/Technologies.jsx'
@@ -8,7 +8,10 @@ import Projects from './components/Projects.jsx'
 import styles from './components/Projects.module.css'
 
 function App() {
+
   
+
+ 
   function typeText(elementClass, text) {
     var elements = document.querySelectorAll(elementClass);
 
@@ -33,7 +36,39 @@ function App() {
     type();
   }
 
+  const [textProject, setTextProject] = useState("Click on any project to see more info")
+
   useEffect(() => {
+
+    function handleButtonClick(event){
+      console.log("Clicked Button", event.target)
+    
+      
+      const clickedComponent = event.target.className
+
+      if (clickedComponent.includes("projectBox1")){
+        console.log("Box1")
+        setTextProject("This is a Web Market made in conjunction with other programmers, it explores product search functions, filters, cart, among others.")
+      }
+      if (clickedComponent.includes("projectBox2")){
+        console.log("Box2")
+        setTextProject("This is a Digital Stopwatch with start, reset and pause functions.")
+      }
+      if (clickedComponent.includes("projectBox3")){
+        console.log("Box3")
+        setTextProject("This is a login page with Dark Theme and Light Theme function, + Digital Clock")
+      }
+      if (clickedComponent.includes("projectBox4")){
+        console.log("Box4")
+        setTextProject("This is a digital clock that works based on information provided by the PC.")
+      }
+    }
+  
+    document.querySelectorAll(".prBox").forEach((button)=>{
+      button.addEventListener('click', handleButtonClick)
+    })
+    
+
     typeText(".hi", "Hi, my name is", 90);
   }, []);
 
@@ -80,14 +115,14 @@ function App() {
         <section className='flex'>
           <article id='ArtProjects' className='mt-16 overflow-auto roundedPers1 shadowBox w-96 h-96 quaternaryColor'>
             <div className='flex flex-col items-center roundedPers1 justify-center'>
-                <Projects indexProjects={styles.projectBox1} additionalClass={'mb-10 mt-6'}/>
-                <Projects indexProjects={styles.projectBox2} additionalClass={'mb-10'}/>
-                <Projects indexProjects={styles.projectBox3} additionalClass={'mb-10'}/>
-                <Projects indexProjects={styles.projectBox4} additionalClass={'mb-6'}/>
+                <Projects indexProjects={styles.projectBox1} additionalClass={'projectBox1 cursor-pointer prBox mb-10 mt-6'}/>
+                <Projects indexProjects={styles.projectBox2} additionalClass={'projectBox2 cursor-pointer prBox mb-10'}/>
+                <Projects indexProjects={styles.projectBox3} additionalClass={'projectBox3 cursor-pointer prBox mb-10'}/>
+                <Projects indexProjects={styles.projectBox4} additionalClass={'projectBox4 cursor-pointer prBox mb-6'}/>
             </div>
           </article>
-            <article className='w-96 h-96 flex mt-16 ml-56 items-center roundedPers1 quaternaryColor shadowBox justify-center'>
-              
+            <article className='w-96 h-96 flex mt-16 ml-56 text-center items-center roundedPers1 quaternaryColor shadowBox justify-center'>
+              <p className='font-semibold pl-5 pr-5 text-2xl primaryColor'>{textProject}</p>
             </article>
         </section>
       </section>

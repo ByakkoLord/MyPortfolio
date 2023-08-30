@@ -6,21 +6,6 @@
     right: -100vw;
 }
 
-.anima1{
-    animation: transition1 forwards 2s;
-}
-
-.anima2{
-    animation: none;
-}
-
-.color1{
-    color: #da5838;
-}
-
-.color2{
-    color: #ffffff;
-}
 
 .boxOrange{
     position: fixed;
@@ -28,7 +13,6 @@
     height: 100vh;
     background-color: #da5838;
     right: -100vw;
-    animation: transition2 forwards 3s;
 }
 
 .redBackground{
