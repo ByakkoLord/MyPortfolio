@@ -32,7 +32,27 @@ function App() {
     type();
   }
 
-  const [textProject, setTextProject] = useState("Click on any project to see more info")
+  
+
+  const [textProject, setTextProject] = useState("Click on any project to see more info")   
+  const [show, setShow] = useState(true)
+  const [counter, setCounter] = useState(0)
+  const handleIconClick = () => {
+    setCounter(counter + 1)
+    console.log(counter)
+    setShow(false)
+    setInterval(() => {
+      setShow(true)
+    },2000)
+  }
+
+  
+
+  const containerClass = `${show ? "hidden" : "flex"}`
+
+
+
+
 
   useEffect(() => {
 
@@ -63,6 +83,8 @@ function App() {
     document.querySelectorAll(".prBox").forEach((button)=>{
       button.addEventListener('click', handleButtonClick)
     })
+
+    
     
 
     typeText(".hi", "Hi, my name is", 90);
@@ -79,7 +101,10 @@ function App() {
         <h2 className='textColor1 text-6xl font-extrabold mb-6'>Here i turn imagination into reality</h2>
         <p className='textColor1 w-96 text-xl font-medium mb-6'>I am a Front-End Developer on the rise, here you will find some of my <span className='primaryColor'>habilities</span>, <span className='primaryColor'>projects</span> and ambitions.</p>
         <article id='SocialMedias' className='flex justify-between w-40 ml-6'>
-        <i className="fa-solid fa-envelope primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/>
+        <i onClick={handleIconClick} className="emailIcon fa-solid fa-envelope primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/>
+        <div className={`${containerClass} absolute justify-center items-center h-6 quaternaryColor p-4 text-white font-bold border-dashed border-2 borderArrow roundedPers1`}>
+          <span>Email Copied</span>
+        </div>
         <a target='blank' href="https://www.linkedin.com/in/gui-fonseca-827818268/"><i className="fa-brands fa-linkedin primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/></a>
         <a target='blank' href="https://github.com/ByakkoLord"><i className="fa-brands fa-github primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/></a>
         <img src='/assets/download.png' alt=''/>
