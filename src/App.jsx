@@ -67,7 +67,7 @@ function App() {
               <span className="tooltip items-center pl-4 pr-4 h-11  bg-slate-600 text-white rounded-xl">TailwindCSS</span>
             </div>   
             <Technologies name='Git' icon='fa-brands fa-git-alt tech'/>
-            <Technologies name='Learning' icon='fa-brands fa-question tech'/>
+            <Technologies name='Java' icon='fa-brands fa-java tech'/>
             <Technologies name='Learning' icon='fa-brands fa-question tech'/>
             <Technologies name='Learning' icon='fa-brands fa-question tech'/>
           </section>
