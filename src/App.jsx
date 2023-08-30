@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 import Technologies from './components/Technologies.jsx'
 import DarkModeTransition from './components/DarkModeTransition.jsx'
 import TailwindLogo from './assets/tailwind.png'
@@ -37,7 +38,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App overflow-x-hidden">
+    <div className="App overflow-x-hidden overflow-y-hidden">
       <Header/>
       <DarkModeTransition/>
 
@@ -76,20 +77,25 @@ function App() {
       </section>
       <section id='Projects' className='flex justify-center items-center flex-col overflow-hidden w-full h-screen p-10'>
         <h1 className='text-7xl primaryColor text-center font-extrabold'>Projects</h1>
-        <article id='ArtProjects' className='mt-16 ml overflow-auto items-center roundedPers1 shadowBox justify-center w-96 h-96 quaternaryColor'>
-          <div className='flex flex-col items-center roundedPers1 justify-center'>
-              <Projects indexProjects={styles.projectBox1} additionalClass={'mb-10 mt-6'}/>
-              <Projects indexProjects={styles.projectBox2} additionalClass={'mb-10'}/>
-              <Projects indexProjects={styles.projectBox3} additionalClass={'mb-10'}/>
-              <Projects indexProjects={styles.projectBox4} additionalClass={'mb-6'}/>
-          </div>
-        </article>
+        <section className='flex'>
+          <article id='ArtProjects' className='mt-16 overflow-auto roundedPers1 shadowBox w-96 h-96 quaternaryColor'>
+            <div className='flex flex-col items-center roundedPers1 justify-center'>
+                <Projects indexProjects={styles.projectBox1} additionalClass={'mb-10 mt-6'}/>
+                <Projects indexProjects={styles.projectBox2} additionalClass={'mb-10'}/>
+                <Projects indexProjects={styles.projectBox3} additionalClass={'mb-10'}/>
+                <Projects indexProjects={styles.projectBox4} additionalClass={'mb-6'}/>
+            </div>
+          </article>
+            <article className='w-96 h-96 flex mt-16 ml-56 items-center roundedPers1 quaternaryColor shadowBox justify-center'>
+              
+            </article>
+        </section>
       </section>
 
       <section id='About' className='flex justify-evenly items-center overflow-hidden w-full h-screen shadowBox tertiaryColor p-10'>
         <article className='w-96 h-96 quaternaryColor roundedPers1 shadowBox'>
-          <h3 className='primaryColor font-semibold text-4xl text-center mt-4'>Who am i?</h3>
-          <p className='text-white font-semibold text-2xl text-center mt-6 ml-6 mr-6'>Hello, I'm ByakkoLoad or Guilherme Fonseca, I'm 19 years old, I'm a Front-End programmer, currently familiar with technologies (HTML, CSS and JavaScript) and I try to keep evolving according to the market and its front.</p>
+          <h3 className='primaryColor font-semibold text-4xl text-center mt-12'>Who am i?</h3>
+          <p className='text-white font-semibold text-xl text-center mt-8 ml-6 mr-6'>Hello, I'm ByakkoLoad or Guilherme Fonseca, I'm 19 years old, I'm a Front-End programmer, currently familiar with technologies (HTML, CSS and JavaScript) and I try to keep evolving according to the market and its front.</p>
         </article>
         <article className='flex flex-col justify-center items-center w-96 h-96'>
           <ul>
@@ -100,6 +106,7 @@ function App() {
           </ul>
         </article>
       </section>
+      <Footer/>
     </div>
     
   );

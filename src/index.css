@@ -71,4 +71,7 @@
   .borderAbout{
     border-left: #17e2e9 solid 4px;
   }
+  .borderArrow{
+    border: #17e2e9 3px solid;
+  }
 }
