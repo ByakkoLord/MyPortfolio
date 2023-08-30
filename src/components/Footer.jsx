@@ -18,7 +18,7 @@ function Footer(){
     return(
         <section className="flex items-center justify-around pt-3 pb-3">
             <div className="flex items-center">
-                <span className="text-lg pr-2 text-white">Made with</span><a href="https://react.dev"><i onMouseLeave={mouseLeave} onMouseEnter={mouseEnter} className={icon}></i></a>
+                <span className="text-lg pr-2 text-white">Made with</span><a href="https://react.dev" target="blank"><i onMouseLeave={mouseLeave} onMouseEnter={mouseEnter} className={icon}></i></a>
             </div>
             <div>
                 <span className="text-lg pr-2 text-white">Copyright © 2023 by Guilherme Fonseca da Costa | All Rights Reserved</span>
