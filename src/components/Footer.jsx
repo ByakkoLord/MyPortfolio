@@ -23,7 +23,7 @@ function Footer(){
             <div>
                 <span className="text-lg pr-2 text-white">Copyright © 2023 by Guilherme Fonseca da Costa | All Rights Reserved</span>
             </div>
-            <button className="flex items-center justify-center rounded-md primaryColor text-3xl w-12 h-12 borderArrow"><i className="fa-solid fa-arrow-right fa-rotate-270"></i></button>
+            <button onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'})}} className="hover:bg-slate-600 transition-all flex items-center justify-center rounded-md primaryColor text-3xl w-12 h-12 borderArrow"><i className="fa-solid fa-arrow-right fa-rotate-270"></i></button>
         </section>
     )
 }

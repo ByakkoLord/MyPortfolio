@@ -8,10 +8,6 @@ import Projects from './components/Projects.jsx'
 import styles from './components/Projects.module.css'
 
 function App() {
-
-  
-
- 
   function typeText(elementClass, text) {
     var elements = document.querySelectorAll(elementClass);
 
@@ -84,8 +80,8 @@ function App() {
         <p className='textColor1 w-96 text-xl font-medium mb-6'>I am a Front-End Developer on the rise, here you will find some of my <span className='primaryColor'>habilities</span>, <span className='primaryColor'>projects</span> and ambitions.</p>
         <article id='SocialMedias' className='flex justify-between w-40 ml-6'>
         <i className="fa-solid fa-envelope primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/>
-        <i className="fa-brands fa-linkedin primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/>
-        <i className="fa-brands fa-github primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/>
+        <a target='blank' href="https://www.linkedin.com/in/gui-fonseca-827818268/"><i className="fa-brands fa-linkedin primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/></a>
+        <a target='blank' href="https://github.com/ByakkoLord"><i className="fa-brands fa-github primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/></a>
         <img src='/assets/download.png' alt=''/>
         </article>
       </section>
