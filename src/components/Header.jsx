@@ -10,7 +10,6 @@ function Header() {
                     <a href="#Tecnologies"><li className="transition-all hover:text-white cursor-pointer pr-6">Tech</li></a>
                     <a href="#Projects"><li className="transition-all hover:text-white cursor-pointer pr-6">Projects</li></a>
                     <a href="#About"><li className="transition-all hover:text-white cursor-pointer pr-6">About</li></a>
-                    <li className="transition-all hover:text-white cursor-pointer pr-6">Contact</li>
                 </ul>
             </nav>
         </section>
