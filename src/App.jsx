@@ -41,12 +41,41 @@ function App() {
     setCounter(counter + 1)
     console.log(counter)
     setShow(false)
+    
     setInterval(() => {
       setShow(true)
-    },2000)
+    }, 1000)
+    setInterval(() => {
+      setShow(true)
+    }, 1000)
+    
+  }
+  var textEmailSpan = "Email Copied!"
+  const emailIconContainer = document.querySelector(".emailIconContainer")
+  if (counter === 5){
+    textEmailSpan = "Penta Copy!"
+    emailIconContainer.classList.remove("quaternaryColor")
+    emailIconContainer.classList.add("bg-green-600")
+    emailIconContainer.classList.add("animate-bounce3")
+  }
+  if (counter === 6){
+    textEmailSpan = "Hexa Copy!!"
+    emailIconContainer.classList.remove("quaternaryColor")
+    emailIconContainer.classList.add("bg-green-700")
+    emailIconContainer.classList.add("animate-bounce2")
+    emailIconContainer.classList.remove("animate-bounce3")
+  }
+  if (counter >= 7){
+    textEmailSpan = "ULTIMATE COPYY!!!!!"
+    emailIconContainer.classList.remove("quaternaryColor")
+    emailIconContainer.classList.add("bg-red-600")
+    emailIconContainer.classList.add("animate-bounce1")
+    emailIconContainer.classList.remove("animate-bounce2")
   }
 
-  
+
+
+
 
   const containerClass = `${show ? "hidden" : "flex"}`
 
@@ -102,8 +131,8 @@ function App() {
         <p className='textColor1 w-96 text-xl font-medium mb-6'>I am a Front-End Developer on the rise, here you will find some of my <span className='primaryColor'>habilities</span>, <span className='primaryColor'>projects</span> and ambitions.</p>
         <article id='SocialMedias' className='flex justify-between w-40 ml-6'>
         <i onClick={handleIconClick} className="emailIcon fa-solid fa-envelope primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/>
-        <div className={`${containerClass} absolute justify-center items-center h-6 quaternaryColor p-4 text-white font-bold border-dashed border-2 borderArrow roundedPers1`}>
-          <span>Email Copied</span>
+        <div className={`${containerClass} emailIconContainer absolute justify-center items-center h-6 quaternaryColor p-4 text-white font-bold border-dashed border-2 borderArrow roundedPers1`}>
+          <span>{textEmailSpan}</span>
         </div>
         <a target='blank' href="https://www.linkedin.com/in/gui-fonseca-827818268/"><i className="fa-brands fa-linkedin primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/></a>
         <a target='blank' href="https://github.com/ByakkoLord"><i className="fa-brands fa-github primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/></a>
