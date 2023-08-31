@@ -86,6 +86,9 @@
   .borderArrow{
     border: #17e2e9 3px solid;
   }
+  .borderBottom{
+    border-bottom: #17e2e9 solid 2px;
+  }
 
   @keyframes bounce {
     0%, 100% {
