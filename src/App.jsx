@@ -159,9 +159,9 @@ function App() {
             
           </section>
       </section>
-      <section id='Projects' className='flex justify-center items-center flex-col overflow-hidden w-full h-screen p-10'>
+      <section id='Projects' className='flex justify-center items-center flex-col overflow-hidden w-full h-auto p-10'>
         <h1 className='text-7xl primaryColor text-center font-extrabold'>Projects</h1>
-        <section className='flex'>
+        <section className='flex md:flex-row flex-col'>
           <article id='ArtProjects' className='mt-16 overflow-auto roundedPers1 shadowBox w-96 h-96 quaternaryColor'>
             <div className='flex flex-col items-center roundedPers1 justify-center'>
                 <Projects indexProjects={styles.projectBox1} additionalClass={'projectBox1 cursor-pointer prBox mb-10 mt-6'}/>
@@ -170,7 +170,7 @@ function App() {
                 <Projects indexProjects={styles.projectBox4} additionalClass={'projectBox4 cursor-pointer prBox mb-6'}/>
             </div>
           </article>
-            <article className='w-96 h-96 flex mt-16 ml-56 text-center items-center roundedPers1 quaternaryColor shadowBox justify-center'>
+            <article className='w-96 h-96 flex mt-16 md:ml-56 text-center items-center roundedPers1 quaternaryColor shadowBox justify-center'>
               <p className='font-semibold pl-5 pr-5 text-2xl primaryColor'>{textProject}</p>
             </article>
         </section>
