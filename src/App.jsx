@@ -26,7 +26,7 @@ function App() {
           }
         }
         
-        var interval = setInterval(typeCharacter, 90);
+        var interval = setInterval(typeCharacter, 120);
       });
     }
 
