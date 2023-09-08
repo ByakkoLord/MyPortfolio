@@ -1,6 +1,6 @@
 function About(){
     return(
-        <section id='About' className='flex-col
+        <section id='About' className='flex-col md:flex-row
         flex justify-evenly items-center overflow-hidden w-full h-auto shadowBox tertiaryColor p-10'>
         <article className='w-96 h-96 quaternaryColor roundedPers1 shadowBox'>
           <h3 className='primaryColor font-semibold text-4xl text-center mt-12'>Who am i?</h3>
