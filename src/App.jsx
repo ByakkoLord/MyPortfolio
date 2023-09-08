@@ -139,7 +139,8 @@ function App() {
       </section>
 
       <section id='Tecnologies' className='flex flex-col justify-center items-center overflow-hidden w-full h-screen shadowBox tertiaryColor p-10'>
-          <h1 className='text-7xl primaryColor text-center font-extrabold'>Technologies</h1>
+          <h1 className='md:text-7xl
+           text-5xl primaryColor text-center font-extrabold'>Technologies</h1>
           <section className='grid gap-5 grid-cols-3 grid-rows-3 w-96 mt-11'>
             <Technologies name='HTML5' icon='fa-brands fa-html5 tech'/>
             <Technologies name='CSS3' icon='fa-brands fa-css3-alt tech'/>
