@@ -125,7 +125,7 @@ function App() {
       <section id='Home' className='flex justify-center items-start ml-9 md:ml-24 flex-col w-full h-screen'>
         <h3 className='hi primaryColor text-2xl font-extrabold mb-6'>&gt; </h3>
         <h1 className='textColor2 text-5xl md:text-7xl font-extrabold mb-6'>ByakkoLord.</h1>
-        <h2 className='textColor w-96 md:w-auto text-3xl md:text-6xl font-extrabold mb-6'>Here i turn imagination into reality</h2>
+        <h2 className='textColor text-slate-300 w-96 md:w-auto text-3xl md:text-6xl font-extrabold mb-6'>Here i turn imagination into reality</h2>
         <p className='textColor1 w-96 md:text-xl font-medium mb-6'>I am a Front-End Developer on the rise, here you will find some of my <span className='primaryColor'>habilities</span>, <span className='primaryColor'>projects</span> and ambitions.</p>
         <article id='SocialMedias' className='flex justify-between w-40 ml-6'>
         <i onClick={handleIconClick} className="emailIcon fa-solid fa-envelope primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/>
