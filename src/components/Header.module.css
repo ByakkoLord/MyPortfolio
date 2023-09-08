@@ -5,6 +5,9 @@
 .headerAnimation2{
     animation: headerAnimation2 forwards 1s;
 }
+.headerButtonAnimation{
+    animation: headerButtonAnimation forwards 1s;
+}
 
 @keyframes headerAnimation{
     0%{
@@ -20,5 +23,15 @@
     }
     100%{
         right: -144px;
+    }
+}
+@keyframes headerButtonAnimation{
+    0%{
+        position: absolute;
+        right: 0px;
+    }
+    100%{
+        position: absolute;
+        right: 100px;
     }
 }
