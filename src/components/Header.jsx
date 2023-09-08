@@ -1,7 +1,8 @@
 import style from './Header.module.css'
 import { useState } from 'react'
 
-function Header() {
+
+export default function Header() {
     const [show, setShow] = useState(false)
     
 
@@ -24,7 +25,3 @@ function Header() {
         </section>
     )
 }
-
-export default Header
-
-//flex flex-col justify-between primaryColor text-2xl font-extrabold
