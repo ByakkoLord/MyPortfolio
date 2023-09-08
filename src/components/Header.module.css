@@ -1,0 +1,37 @@
+.headerAnimation{
+    animation: headerAnimation forwards 1s;
+}
+
+.headerAnimation2{
+    animation: headerAnimation2 forwards 1s;
+}
+.headerButtonAnimation{
+    animation: headerButtonAnimation forwards 1s;
+}
+
+@keyframes headerAnimation{
+    0%{
+        right: -144px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+@keyframes headerAnimation2{
+    0%{
+        right: 0px;
+    }
+    100%{
+        right: -144px;
+    }
+}
+@keyframes headerButtonAnimation{
+    0%{
+        position: absolute;
+        right: 0px;
+    }
+    100%{
+        position: absolute;
+        right: 100px;
+    }
+}

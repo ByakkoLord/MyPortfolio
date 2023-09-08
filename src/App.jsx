@@ -122,11 +122,11 @@ function App() {
       <Header/>
       <DarkModeTransition/>
 
-      <section id='Home' className='flex justify-center items-start ml-24 flex-col w-full h-screen'>
+      <section id='Home' className='flex justify-center items-start ml-9 md:ml-24 flex-col w-full h-screen'>
         <h3 className='hi primaryColor text-2xl font-extrabold mb-6'>&gt; </h3>
-        <h1 className='textColor2 text-7xl font-extrabold mb-6'>ByakkoLord.</h1>
-        <h2 className='textColor1 text-6xl font-extrabold mb-6'>Here i turn imagination into reality</h2>
-        <p className='textColor1 w-96 text-xl font-medium mb-6'>I am a Front-End Developer on the rise, here you will find some of my <span className='primaryColor'>habilities</span>, <span className='primaryColor'>projects</span> and ambitions.</p>
+        <h1 className='textColor2 text-5xl md:text-7xl font-extrabold mb-6'>ByakkoLord.</h1>
+        <h2 className='textColor text-slate-300 w-96 md:w-auto text-3xl md:text-6xl font-extrabold mb-6'>Here i turn imagination into reality</h2>
+        <p className='textColor1 w-96 md:text-xl font-medium mb-6'>I am a Front-End Developer on the rise, here you will find some of my <span className='primaryColor'>habilities</span>, <span className='primaryColor'>projects</span> and ambitions.</p>
         <article id='SocialMedias' className='flex justify-between w-40 ml-6'>
         <i onClick={handleIconClick} className="emailIcon fa-solid fa-envelope primaryColor text-4xl hover:cursor-pointer hover:scale-110 transition-all"/>
         <div className={`${containerClass} emailIconContainer absolute justify-center items-center h-6 quaternaryColor p-4 text-white font-bold border-dashed border-2 borderArrow roundedPers1`}>
@@ -139,7 +139,8 @@ function App() {
       </section>
 
       <section id='Tecnologies' className='flex flex-col justify-center items-center overflow-hidden w-full h-screen shadowBox tertiaryColor p-10'>
-          <h1 className='text-7xl primaryColor text-center font-extrabold'>Technologies</h1>
+          <h1 className='md:text-7xl
+           text-5xl primaryColor text-center font-extrabold'>Technologies</h1>
           <section className='grid gap-5 grid-cols-3 grid-rows-3 w-96 mt-11'>
             <Technologies name='HTML5' icon='fa-brands fa-html5 tech'/>
             <Technologies name='CSS3' icon='fa-brands fa-css3-alt tech'/>
@@ -158,9 +159,9 @@ function App() {
             
           </section>
       </section>
-      <section id='Projects' className='flex justify-center items-center flex-col overflow-hidden w-full h-screen p-10'>
+      <section id='Projects' className='flex justify-center items-center flex-col overflow-hidden w-full h-auto p-10'>
         <h1 className='text-7xl primaryColor text-center font-extrabold'>Projects</h1>
-        <section className='flex'>
+        <section className='flex md:flex-row flex-col'>
           <article id='ArtProjects' className='mt-16 overflow-auto roundedPers1 shadowBox w-96 h-96 quaternaryColor'>
             <div className='flex flex-col items-center roundedPers1 justify-center'>
                 <Projects indexProjects={styles.projectBox1} additionalClass={'projectBox1 cursor-pointer prBox mb-10 mt-6'}/>
@@ -169,7 +170,7 @@ function App() {
                 <Projects indexProjects={styles.projectBox4} additionalClass={'projectBox4 cursor-pointer prBox mb-6'}/>
             </div>
           </article>
-            <article className='w-96 h-96 flex mt-16 ml-56 text-center items-center roundedPers1 quaternaryColor shadowBox justify-center'>
+            <article className='w-96 h-96 flex mt-16 md:ml-56 text-center items-center roundedPers1 quaternaryColor shadowBox justify-center'>
               <p className='font-semibold pl-5 pr-5 text-2xl primaryColor'>{textProject}</p>
             </article>
         </section>
