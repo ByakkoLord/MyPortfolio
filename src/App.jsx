@@ -96,7 +96,7 @@ function App() {
       }
       if (clickedComponent.includes("projectBox2")){
         console.log("Box2")
-        setTextProject("This is a Digital Stopwatch with start, reset and pause functions.")
+        setTextProject("This is a NotePad made with ReactJs, TailwindCSS and linked with a Server Made with ExpressJs and MongoDB Sheel.")
       }
       if (clickedComponent.includes("projectBox3")){
         console.log("Box3")
