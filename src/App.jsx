@@ -138,7 +138,7 @@ function App() {
         <img src='/assets/download.png' alt=''/>
         </article>
       </section>
-        
+
       <section id='Tecnologies' className='flex flex-col justify-center items-center overflow-hidden w-full h-screen shadowBox tertiaryColor p-10'>
           <h1 className='md:text-7xl
            text-5xl primaryColor text-center font-extrabold'>Technologies</h1>
@@ -148,7 +148,7 @@ function App() {
             <Technologies name='JavaScript' icon='fa-brands fa-square-js tech'/>
             <div className="flex toolactive hover:scale-110 transition-all hover:cursor-pointer justify-center items-center w-28 h-28 quaternaryColor shadow-md shadow-black roundedPers1">
               <img src={TSLogo} className='w-20' alt='TypeScript'/>
-              <span className="tooltip items-center pl-4 pr-4 h-11  bg-slate-600 text-white rounded-xl">TailwindCSS</span>
+              <span className="tooltip items-center pl-4 pr-4 h-11  bg-slate-600 text-white rounded-xl">TypeScript</span>
             </div>
             <Technologies name='ReactJs' icon='fa-brands fa-react tech'/>
             <div className="flex toolactive hover:scale-110 transition-all hover:cursor-pointer justify-center items-center w-28 h-28 quaternaryColor shadow-md shadow-black roundedPers1">
