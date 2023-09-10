@@ -1,6 +1,6 @@
 function About(){
     return(
-        <section id='About' className='flex-col md:flex-row
+        <section id='About' className='flex-col md:h-screen md:flex-row
         flex justify-evenly items-center overflow-hidden w-full h-auto shadowBox tertiaryColor p-10'>
         <article className='w-96 h-96 quaternaryColor roundedPers1 shadowBox'>
           <h3 className='primaryColor font-semibold text-4xl text-center mt-12'>Who am i?</h3>
@@ -10,7 +10,7 @@ function About(){
           <ul>
             <li className='borderAbout pl-5 mb-5 text-white'>He completed the technical course in electrotechnics during high school at ETEC.</li>
             <li className='borderAbout pl-5 mb-5 text-white'>Currently studying Bachelor of Science in Computer Science.</li>
-            <li className='borderAbout pl-5 mb-5 text-white'>In Progress</li>
+            <li className='borderAbout pl-5 mb-5 text-white'>Currently making all awesome things in the world</li>
             <li className='borderAbout pl-5 mb-5 text-white'>In Progress</li>
           </ul>
         </article>

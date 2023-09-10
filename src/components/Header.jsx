@@ -16,7 +16,7 @@ export default function Header() {
                 ${show ? style.headerButtonAnimation : style.headerButtonAnimation2} text-3xl transition-all mr-10 rounded-full flex items-center justify-center w-12 h-12 primaryColor fa-solid fa-bars`}></i>
                 <ul className={`md:static md:flex-row md:w-96 md:h-auto md:top-auto md:bg-transparent md:right-auto
                   ${show ? style.headerAnimation : style.headerAnimation2} absolute flex flex-col justify-evenly items-center w-36 primaryColor font-bold text-2xl top-0  bg-slate-700 h-56`}>
-                    <li onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="hover:text-white cursor-pointer">Home</li>
+                    <button><li onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="hover:text-white cursor-pointer">Home</li></button>
                     <a href="#Tecnologies"><li className="transition-all hover:text-white cursor-pointer">Tech</li></a>
                     <a href="#Projects"><li className="transition-all hover:text-white cursor-pointer">Projects</li></a>
                     <a href="#About"><li className="transition-all hover:text-white cursor-pointer">About</li></a>
