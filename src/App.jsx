@@ -164,7 +164,7 @@ function App() {
             
           </section>
       </section>
-      <section id='Projects' className='flex justify-center items-center flex-col overflow-hidden w-full h-auto p-10'>
+      <section id='Projects' className='flex justify-center items-center flex-col overflow-hidden w-full md:h-screen h-auto p-10'>
         <h1 className='text-7xl primaryColor text-center font-extrabold'>Projects</h1>
         <section className='flex md:flex-row flex-col'>
           <article id='ArtProjects' className='mt-16 overflow-auto roundedPers1 shadowBox w-96 h-96 quaternaryColor'>
