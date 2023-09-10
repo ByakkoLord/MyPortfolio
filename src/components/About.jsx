@@ -10,7 +10,7 @@ function About(){
           <ul>
             <li className='borderAbout pl-5 mb-5 text-white'>He completed the technical course in electrotechnics during high school at ETEC.</li>
             <li className='borderAbout pl-5 mb-5 text-white'>Currently studying Bachelor of Science in Computer Science.</li>
-            <li className='borderAbout pl-5 mb-5 text-white'>In Progress</li>
+            <li className='borderAbout pl-5 mb-5 text-white'>Currently making all awesome things in the world</li>
             <li className='borderAbout pl-5 mb-5 text-white'>In Progress</li>
           </ul>
         </article>
