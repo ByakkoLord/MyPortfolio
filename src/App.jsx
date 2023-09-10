@@ -138,7 +138,7 @@ function App() {
         <img src='/assets/download.png' alt=''/>
         </article>
       </section>
-
+        
       <section id='Tecnologies' className='flex flex-col justify-center items-center overflow-hidden w-full h-screen shadowBox tertiaryColor p-10'>
           <h1 className='md:text-7xl
            text-5xl primaryColor text-center font-extrabold'>Technologies</h1>
