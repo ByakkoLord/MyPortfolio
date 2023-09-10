@@ -5,6 +5,7 @@ import Footer from './components/Footer.jsx'
 import Technologies from './components/Technologies.jsx'
 import DarkModeTransition from './components/DarkModeTransition.jsx'
 import TailwindLogo from './assets/tailwind.png'
+import TSLogo from './assets/TypeScript.png'
 import Projects from './components/Projects.jsx'
 import styles from './components/Projects.module.css'
 
@@ -145,6 +146,10 @@ function App() {
             <Technologies name='HTML5' icon='fa-brands fa-html5 tech'/>
             <Technologies name='CSS3' icon='fa-brands fa-css3-alt tech'/>
             <Technologies name='JavaScript' icon='fa-brands fa-square-js tech'/>
+            <div className="flex toolactive hover:scale-110 transition-all hover:cursor-pointer justify-center items-center w-28 h-28 quaternaryColor shadow-md shadow-black roundedPers1">
+              <img src={TSLogo} className='w-20' alt='TypeScript'/>
+              <span className="tooltip items-center pl-4 pr-4 h-11  bg-slate-600 text-white rounded-xl">TailwindCSS</span>
+            </div>
             <Technologies name='ReactJs' icon='fa-brands fa-react tech'/>
             <div className="flex toolactive hover:scale-110 transition-all hover:cursor-pointer justify-center items-center w-28 h-28 quaternaryColor shadow-md shadow-black roundedPers1">
               <img src={TailwindLogo} className='w-72' alt='TailwindCSS'/>
@@ -152,8 +157,8 @@ function App() {
             </div>   
             <Technologies name='Git' icon='fa-brands fa-git-alt tech'/>
             <Technologies name='Java' icon='fa-brands fa-java tech'/>
-            <Technologies name='Learning' icon='fa-brands fa-question tech'/>
-            <Technologies name='Learning' icon='fa-brands fa-question tech'/>
+            <Technologies name='NodeJs' icon='fa-brands fa-node-js tech'/>
+               
           </section>
           <section>
             
